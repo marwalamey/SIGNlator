@@ -25,3 +25,12 @@ D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_
 D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
 D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
 D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\bin\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\bin\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.MixerForm.resources
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
