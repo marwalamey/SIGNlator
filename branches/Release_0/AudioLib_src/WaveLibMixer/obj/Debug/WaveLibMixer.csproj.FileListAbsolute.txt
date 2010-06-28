@@ -1,0 +1,20 @@
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
