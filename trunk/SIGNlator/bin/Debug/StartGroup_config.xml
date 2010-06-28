@@ -1,0 +1,22 @@
+<PublishConfig>
+	<Settings projectName="StartGroup" publishType="web" target="E:/4th Year/GP/Mapping Marwa/StartGroup.q3d" saveCurrentProject="" keepRunningApplication="0" filterType="" useZipCompression="1" saveWhenPublishing="1" keepRunningWhenActive="0" protectCgrs="0" includeFilters="*.cgr" compression="1" lowFootprint="0"/>
+	<Screensaver defaultFolder="C:\Program Files\Quest3D Projects\$Default$" runInPreviewMode="1" dontStopOnMouse="0" directXWarning="1"/>
+	<Installer defaultFolder="C:\Program Files\Quest3D Projects\$Default$" startMenuPath="Quest3D Projects\$Default$" runAfterInstallation="0" directXWarning="1"/>
+	<Viewer copyToOtherDirectory="0" otherDirectory="" confirmOverwrites="1"/>
+	<Web createHtml="1" copyToOtherDirectory="0" otherDirectory="" htmlFileName="" confirmOverwrites="1"/>
+	<Dirs>
+		<Dir path="/Crystal Globe" status="1"/>
+		<Dir path="/HLSL" status="1"/>
+		<Dir path="/Heba Mousa" status="1"/>
+		<Dir path="C:/Program Files (x86)/Quest3D/Quest3D 4.2.2" status="1"/>
+		<Dir path="/Karma" status="1"/>
+		<Dir path="/KarmaResidence" status="1"/>
+		<Dir path="/Khalifa" status="1"/>
+		<Dir path="/MostafaShafie" status="1"/>
+		<Dir path="/Stereoscopic" status="1"/>
+		<Dir path="/inView" status="1"/>
+	</Dirs>
+	<Files>
+		<File path="/CollisionRayCheck02.cgr" status="1"/>
+	</Files>
+</PublishConfig>

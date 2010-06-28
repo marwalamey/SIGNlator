@@ -1,0 +1,27 @@
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\bin\Debug\MixerTest.exe
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\bin\Debug\MixerTest.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\obj\Debug\MixerTest.MixerForm.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.MixerForm.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.MixerForm.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb

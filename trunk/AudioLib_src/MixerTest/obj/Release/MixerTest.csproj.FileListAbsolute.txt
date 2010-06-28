@@ -1,0 +1,6 @@
+E:\4th Year\GP\AudioLib_src\MixerTest\bin\Release\MixerTest.exe
+E:\4th Year\GP\AudioLib_src\MixerTest\bin\Release\WaveLibMixer.dll
+E:\4th Year\GP\AudioLib_src\MixerTest\obj\Release\ResolveAssemblyReference.cache
+E:\4th Year\GP\AudioLib_src\MixerTest\obj\Release\MixerTest.MixerForm.resources
+E:\4th Year\GP\AudioLib_src\MixerTest\obj\Release\MixerTest.csproj.GenerateResource.Cache
+E:\4th Year\GP\AudioLib_src\MixerTest\obj\Release\MixerTest.exe

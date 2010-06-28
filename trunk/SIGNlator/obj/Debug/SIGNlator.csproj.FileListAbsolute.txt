@@ -1,0 +1,125 @@
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.Help.resources
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\bin\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\bin\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.Help.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\MixerTest.exe
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\GPv1.4\SIGNlator V1.1\SIGNlator\bin\Debug\MixerTest.pdb
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.Help.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.Learn.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\SIGNlator.exe
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\SIGNlator.pdb
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\MixerTest.exe
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\MixerTest.pdb
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\GPv1.5\SIGNlatorv1.2\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.exe
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.pdb
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Help.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Learn.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.exe
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.pdb
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.exe
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.pdb
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+E:\4th Year\GP\SIGNlatorv1.3\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Help.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Learn.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.3\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.exe
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.exe
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\SIGNlator.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.exe
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\WaveLibMixer.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\MixerTest.pdb
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\ResolveAssemblyReference.cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Adapt.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Help.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Learn.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Properties.Resources.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.Recognize.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.WelcomeForm.resources
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\SIGNlator.csproj.GenerateResource.Cache
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\Interop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\V1.3 backup\SIGNlatorv1.3\SIGNlator\bin\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.5\SIGNlator\obj\Debug\Interop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.5\SIGNlator\obj\Debug\AxInterop.Quest3DActiveX4Lib.dll
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.5\SIGNlator\obj\Debug\SIGNlator.csproj.ResolveComReference.cache
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.5\SIGNlator\obj\Debug\SIGNlator.exe
+D:\Last Year ISA\Graduation Project\Versions\SIGNlatorv1.5\SIGNlator\obj\Debug\SIGNlator.pdb
