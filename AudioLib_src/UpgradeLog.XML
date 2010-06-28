@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WaveLibMixer">
+</Property><Property Name="Solution File" Value="E:\4th Year\GP\AudioLib_src\WaveLibMixer.sln">
+</Property><Property Name="User Options File" Value="E:\4th Year\GP\AudioLib_src\WaveLibMixer.suo">
+</Property><Property Name="Date" Value="Tuesday, May 18, 2010">
+</Property><Property Name="Time" Value="10:32 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WaveLibMixer.sln" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WaveLibMixer.suo" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer.suo">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerTest.csproj" Description="Project file successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\MixerTest.csproj">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerTest.csproj.user" Description="Project user file successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\MixerTest.csproj.user">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\AssemblyInfo.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerForm.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\MixerForm.cs">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\App.ico" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\App.ico">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerForm.resx" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\MixerTest\MixerForm.resx">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerTest.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MixerTest" Source="MixerTest\MixerTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\WaveLibMixer.csproj" Description="Project file successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\WaveLibMixer.csproj">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\WaveLibMixer.csproj.user" Description="Project user file successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\WaveLibMixer.csproj.user">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AssemblyInfo.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\CallbackWindow.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\CallbackWindow.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\Mixer.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\Mixer.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerControl.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerControl.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerControls.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerControls.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerDetail.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerDetail.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerDetails.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerDetails.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerException.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerException.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerLine.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerLine.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerLines.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerLines.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\MixerNative.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\MixerNative.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AudioMixer\Mixers.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AudioMixer\Mixers.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\AuthorAttribute.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\AuthorAttribute.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\WaveServices\WaveNative.cs" Description="File successfully backed up as E:\4th Year\GP\AudioLib_src\Backup\WaveLibMixer\WaveServices\WaveNative.cs">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\WaveLibMixer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WaveLibMixer" Source="WaveLibMixer\WaveLibMixer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WaveLibMixer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WaveLibMixer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MixerTest" Source="MixerTest\MixerTest.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WaveLibMixer" Source="WaveLibMixer\WaveLibMixer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,3 @@
+E:\4th Year\GP\AudioLib_src\WaveLibMixer\bin\Release\WaveLibMixer.dll
+E:\4th Year\GP\AudioLib_src\WaveLibMixer\obj\Release\ResolveAssemblyReference.cache
+E:\4th Year\GP\AudioLib_src\WaveLibMixer\obj\Release\WaveLibMixer.dll
