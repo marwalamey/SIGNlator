@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SIGNlator
 {
-    class MotionAndText
+    public class MotionAndText
     {
         private List<int> MotionNo = new List<int>();
         private List<string> Text = new List<string>();
@@ -24,6 +24,11 @@ namespace SIGNlator
         public List<string> getText()
         {
             return Text;
+        }
+        public void Reset_MotionAndText()
+        {
+            MotionNo.Clear();
+            Text.Clear();
         }
 
     }

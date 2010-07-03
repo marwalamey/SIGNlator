@@ -8,8 +8,9 @@ using System.Windows.Forms;
 
 namespace SIGNlator
 {
-    public partial class Help : Form
+    public partial class Help : Boundary
     {
+        
         public Help()
         {
             InitializeComponent();
