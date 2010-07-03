@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace SIGNlator
 {
-    public partial class Adapt : Form
+    public partial class Adapt : Boundary
     {
-        private Core core = new Core();
+       // private Core core = new Core();
         public Adapt()
         {
             InitializeComponent();
