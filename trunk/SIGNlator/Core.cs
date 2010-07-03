@@ -8,7 +8,7 @@ using System.Text;
 
 namespace SIGNlator
 {
-    class Core
+    public class Core
     {
         private DBManager DBMgr = new DBManager();
         private object SpeechWav;// to be of type wav
@@ -16,7 +16,7 @@ namespace SIGNlator
         private List<string> Text = new List<string>();
         private bool Picture;
         private List<string> Word = new List<string>();
-        private int MotionNo;
+        private int MotionNo=1;
         private Recognizer Recognizer = new Recognizer();
         private SavedStory SaveStory = new SavedStory();
         private MotionAndPicture MotAndPic = new MotionAndPicture();
@@ -25,7 +25,7 @@ namespace SIGNlator
         
 
 
-        public void Run_Recognizer(bool pic)
+        public List<int> Run_Recognizer(bool pic)
         {
             Word = Recognizer.Recognize(); // calling HTK
             for (int i = 0; i < Word.Count; i++)
@@ -47,8 +47,10 @@ namespace SIGNlator
 
 
                 }
+               
                 
             }
+            return MotionSeq;
             
 
         }

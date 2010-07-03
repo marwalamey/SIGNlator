@@ -8,8 +8,10 @@ using System.Windows.Forms;
 
 namespace SIGNlator
 {
-    public partial class WelcomeForm : Form
+    public partial class WelcomeForm : Boundary
     {
+        int language;
+
         public WelcomeForm()
         {
             InitializeComponent();

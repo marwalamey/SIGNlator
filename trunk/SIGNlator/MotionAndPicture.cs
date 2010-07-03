@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SIGNlator
 {
-    class MotionAndPicture
+    public class MotionAndPicture
     {
         private int MotionNo;
         private int Picture;

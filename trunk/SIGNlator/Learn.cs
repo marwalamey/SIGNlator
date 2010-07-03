@@ -10,11 +10,11 @@ using WaveLib.AudioMixer;
 
 namespace SIGNlator
 {
-    public partial class Learn : Form
+    public partial class Learn : Boundary
     {
         private System.Data.SqlClient.SqlConnection sqlCon = new System.Data.SqlClient.SqlConnection();
         private System.Data.SqlClient.SqlCommand sqlCom = new System.Data.SqlClient.SqlCommand();
-        private Core core = new Core();
+        //private Core core = new Core();
         public Learn()
         {
             InitializeComponent();

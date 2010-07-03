@@ -46,8 +46,17 @@ namespace SIGNlator
         private void Show_Sign_Click(object sender, EventArgs e)
         {
             core.Save_Speech();
-            core.Run_Recognizer(false);
-            Change_Motion(1);
+            List<int> mot= core.Run_Recognizer(false);
+            int i = 0;
+            int NoOfMot = mot.Count;
+            for (i = 0; i < NoOfMot; i++)
+            {
+        
+                Change_Motion(mot[i]);
+                
+                
+            }
+            mot.Clear();
             
         }
 
@@ -120,11 +129,13 @@ namespace SIGNlator
 
 
             float cv = axQuest3DCtrl41.get_ChannelValue("StartGroup", "Switch");
-            MessageBox.Show(cv.ToString());
+           // MessageBox.Show(cv.ToString());
             axQuest3DCtrl41.SetChannelValue("StartGroup", "Switch", mot);
             cv = axQuest3DCtrl41.get_ChannelValue("StartGroup", "Switch");
-            MessageBox.Show(cv.ToString());
+            
+            System.Threading.Thread.Sleep(2000);
             axQuest3DCtrl41.SetChannelValue("StartGroup", "Switch", 0);
+            System.Threading.Thread.Sleep(50);
 
         }
 
@@ -137,11 +148,15 @@ namespace SIGNlator
         private void PlaySavedStories_Click(object sender, EventArgs e)
         {
             MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
+            
             for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
             {
+                InputText.Clear();
                 InputText.Text += " " + MotAndtxt.getText()[i];
                 Change_Motion(MotAndtxt.getMotioNo()[i]);
             }
+            MotAndtxt.Reset_MotionAndText();
+
         }
 
 
