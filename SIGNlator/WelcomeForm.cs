@@ -74,8 +74,10 @@ namespace SIGNlator
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "WelcomeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome SIGNlator";
             this.Load += new System.EventHandler(this.WelcomeForm_Load_1);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WelcomeForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,9 +92,14 @@ namespace SIGNlator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Recognize rec = new Recognize();
+            Recognize rec = new Recognize(this);
             rec.Show();
             this.Visible = false;
+        }
+
+        private void WelcomeForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }

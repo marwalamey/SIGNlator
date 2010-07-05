@@ -140,6 +140,14 @@ namespace SIGNlator
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Recognize rec = new Recognize();
+            rec.Show();
+            this.Close();
+
+        }
+
 
 
 

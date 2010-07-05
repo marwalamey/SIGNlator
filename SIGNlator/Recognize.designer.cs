@@ -231,6 +231,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Translate a story";
             this.Load += new System.EventHandler(this.Recognize_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Recognize_FormClosed);
             this.TextToSpeech.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

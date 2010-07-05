@@ -15,11 +15,20 @@ namespace SIGNlator
         private Core core = new Core();
         private List<string> StoryName = new List<string>();
         int counterRec = 0;
+        Form welcomeForm = new Form();
+        bool toLearn = false;
 
 
+        public Recognize(Form wf)
+        {
+            InitializeComponent();
+            welcomeForm = wf;
+        }
         public Recognize()
         {
             InitializeComponent();
+            toLearn = false;
+            
         }
 
         private void TranslateTTS_Click(object sender, EventArgs e)
@@ -103,6 +112,7 @@ namespace SIGNlator
 
         private void Recognize_Load(object sender, EventArgs e)
         {
+            
             string extraString = System.Reflection.Assembly.GetExecutingAssembly().Location; //path of application
            
             for (int i = extraString.Length - 1; i > 0; i--)
@@ -298,11 +308,23 @@ namespace SIGNlator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            toLearn = true;
             Learn lrn = new Learn();
             lrn.Show();
             this.Close();
            
         }
+
+        private void Recognize_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (toLearn == false)
+            {
+                welcomeForm.Close();
+            }
+
+        }
+
+    
 
 
     }
