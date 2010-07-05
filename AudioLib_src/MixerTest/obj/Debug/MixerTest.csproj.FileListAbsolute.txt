@@ -34,3 +34,12 @@ D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debu
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\bin\Debug\MixerTest.exe
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\bin\Debug\MixerTest.pdb
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\obj\Debug\MixerTest.MixerForm.resources
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\obj\Debug\MixerTest.csproj.GenerateResource.Cache
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\obj\Debug\MixerTest.exe
+E:\4th Year\GP\SVN5\AudioLib_src\MixerTest\obj\Debug\MixerTest.pdb
