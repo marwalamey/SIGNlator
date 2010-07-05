@@ -34,6 +34,7 @@
             this.LearningTitle = new System.Windows.Forms.Label();
             this.LearnedWord = new System.Windows.Forms.Label();
             this.LearningPicBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LearningPicBox)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +90,16 @@
             this.LearningPicBox.TabStop = false;
             this.LearningPicBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(768, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "<<Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Learn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +107,7 @@
             this.BackgroundImage = global::SIGNlator.Properties.Resources.LearnBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(846, 569);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LearnedWord);
             this.Controls.Add(this.LearningTitle);
             this.Controls.Add(this.axQuest3DCtrl41);
@@ -120,5 +132,6 @@
         private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
         private System.Windows.Forms.Label LearningTitle;
         private System.Windows.Forms.Label LearnedWord;
+        private System.Windows.Forms.Button button1;
     }
 }
