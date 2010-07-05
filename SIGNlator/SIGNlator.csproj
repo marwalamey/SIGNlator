@@ -184,6 +184,7 @@
     <None Include="Resources\Save.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\LearnBackground.gif" />
     <Content Include="Resources\trans.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

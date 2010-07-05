@@ -90,7 +90,7 @@ namespace SIGNlator
             MotionAndPicture MotNPic = new MotionAndPicture();
             string input = VocabularyListBox.SelectedItem.ToString();
             LearnedWord.Text = input;
-            LearnedWord.Font =  new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LearnedWord.Font =  new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             MotNPic = core.Run_Text_To_Sign_Learn(input);
             int motionNo = MotNPic.getMotionNo();
 
@@ -98,7 +98,7 @@ namespace SIGNlator
             {
                 LearningPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
                 LearningPicBox.BackgroundImage = new Bitmap(MotNPic.getPic());
-                imageList1.Images.Add(LearningPicBox.Image);
+                
                 
             }
             catch (Exception ex)
