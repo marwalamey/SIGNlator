@@ -15,7 +15,7 @@ namespace SIGNlator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Learn());
+            Application.Run(new WelcomeForm());
         }
     }
 }

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recognize));
             this.TranslateTTS = new System.Windows.Forms.Button();
-            this.PlaySaved = new System.Windows.Forms.Button();
             this.SaveStoryName = new System.Windows.Forms.TextBox();
             this.TextToSpeech = new System.Windows.Forms.GroupBox();
             this.InputText = new System.Windows.Forms.RichTextBox();
@@ -42,6 +41,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.TextToSpeech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,21 +61,11 @@
             this.TranslateTTS.UseVisualStyleBackColor = true;
             this.TranslateTTS.Click += new System.EventHandler(this.TranslateTTS_Click);
             // 
-            // PlaySaved
-            // 
-            this.PlaySaved.Location = new System.Drawing.Point(683, 33);
-            this.PlaySaved.Name = "PlaySaved";
-            this.PlaySaved.Size = new System.Drawing.Size(75, 23);
-            this.PlaySaved.TabIndex = 3;
-            this.PlaySaved.Text = "Play";
-            this.PlaySaved.UseVisualStyleBackColor = true;
-            this.PlaySaved.Click += new System.EventHandler(this.PlaySaved_Click);
-            // 
             // SaveStoryName
             // 
             this.SaveStoryName.Location = new System.Drawing.Point(461, 542);
             this.SaveStoryName.Name = "SaveStoryName";
-            this.SaveStoryName.Size = new System.Drawing.Size(129, 20);
+            this.SaveStoryName.Size = new System.Drawing.Size(103, 20);
             this.SaveStoryName.TabIndex = 9;
             // 
             // TextToSpeech
@@ -127,12 +118,14 @@
             this.pictureBox1.Size = new System.Drawing.Size(53, 39);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.RecBtn_Leave);
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.RecBtn_hover);
             // 
             // StoryNameCBox
             // 
             this.StoryNameCBox.FormattingEnabled = true;
-            this.StoryNameCBox.Location = new System.Drawing.Point(657, 542);
+            this.StoryNameCBox.Location = new System.Drawing.Point(694, 542);
             this.StoryNameCBox.Name = "StoryNameCBox";
             this.StoryNameCBox.Size = new System.Drawing.Size(144, 21);
             this.StoryNameCBox.TabIndex = 6;
@@ -148,7 +141,9 @@
             this.pictureBox2.Size = new System.Drawing.Size(63, 50);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.Adjustbtn_Leave);
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.pictureBox2.MouseHover += new System.EventHandler(this.Adjustbtn_Hover);
             // 
             // pictureBox3
             // 
@@ -161,7 +156,9 @@
             this.pictureBox3.Size = new System.Drawing.Size(61, 50);
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.Playbtn_leave);
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
+            this.pictureBox3.MouseHover += new System.EventHandler(this.Playbtn_hover);
             // 
             // pictureBox4
             // 
@@ -174,7 +171,9 @@
             this.pictureBox4.Size = new System.Drawing.Size(50, 45);
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseLeave += new System.EventHandler(this.Savebtn_Leave);
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            this.pictureBox4.MouseHover += new System.EventHandler(this.Savebtn_Hover);
             // 
             // label2
             // 
@@ -187,6 +186,26 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "SIGNlator";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(615, 545);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Saved Stories";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(799, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 32);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Learn the sign language";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Recognize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,6 +213,8 @@
             this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 681);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -204,11 +225,11 @@
             this.Controls.Add(this.SaveStoryName);
             this.Controls.Add(this.StoryNameCBox);
             this.Controls.Add(this.TextToSpeech);
-            this.Controls.Add(this.PlaySaved);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Name = "Recognize";
-            this.Text = "asd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Translate a story";
             this.Load += new System.EventHandler(this.Recognize_Load);
             this.TextToSpeech.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
@@ -224,7 +245,6 @@
         #endregion
 
         private System.Windows.Forms.Button TranslateTTS;
-        private System.Windows.Forms.Button PlaySaved;
      //   private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
         private System.Windows.Forms.TextBox SaveStoryName;
         private System.Windows.Forms.GroupBox TextToSpeech;
@@ -237,6 +257,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.RichTextBox InputText;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }
