@@ -246,6 +246,64 @@ namespace SIGNlator
             MotAndtxt.Reset_MotionAndText();
         }
 
+        private void RecBtn_hover(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new System.Drawing.Size(49, 35);
+
+        }
+
+        private void RecBtn_Leave(object sender, EventArgs e)
+        {
+            pictureBox1.Size = new System.Drawing.Size(53, 39);
+           
+
+        }
+
+        private void Playbtn_hover(object sender, EventArgs e)
+        {
+            pictureBox3.Size = new System.Drawing.Size(57, 46);
+        }
+
+        private void Playbtn_leave(object sender, EventArgs e)
+        {
+            pictureBox3.Size = new System.Drawing.Size(61, 50);
+
+        }
+
+        private void Savebtn_Hover(object sender, EventArgs e)
+        {
+            pictureBox4.Size = new System.Drawing.Size(46, 41);
+
+        }
+
+        private void Savebtn_Leave(object sender, EventArgs e)
+        {
+            pictureBox4.Size = new System.Drawing.Size(50, 45);
+            
+
+        }
+
+        private void Adjustbtn_Hover(object sender, EventArgs e)
+        {
+            pictureBox2.Size = new System.Drawing.Size(59, 46);
+
+
+        }
+
+        private void Adjustbtn_Leave(object sender, EventArgs e)
+        {
+            pictureBox2.Size = new System.Drawing.Size(63, 50);
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Learn lrn = new Learn();
+            lrn.Show();
+            this.Close();
+           
+        }
+
 
     }
 }

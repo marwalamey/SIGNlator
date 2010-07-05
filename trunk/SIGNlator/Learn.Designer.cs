@@ -103,6 +103,7 @@
             this.Controls.Add(this.VocabularyListBox);
             this.DoubleBuffered = true;
             this.Name = "Learn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
             this.Load += new System.EventHandler(this.Learn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
