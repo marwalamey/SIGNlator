@@ -18,3 +18,8 @@ D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\bin\D
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
 D:\Last Year ISA\Graduation Project\Versions\SVN\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\SVN5\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.dll
+E:\4th Year\GP\SVN5\AudioLib_src\WaveLibMixer\bin\Debug\WaveLibMixer.pdb
+E:\4th Year\GP\SVN5\AudioLib_src\WaveLibMixer\obj\Debug\ResolveAssemblyReference.cache
+E:\4th Year\GP\SVN5\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.dll
+E:\4th Year\GP\SVN5\AudioLib_src\WaveLibMixer\obj\Debug\WaveLibMixer.pdb
