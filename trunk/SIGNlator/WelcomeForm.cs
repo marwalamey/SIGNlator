@@ -30,7 +30,8 @@ namespace SIGNlator
             // 
             // WelcomeForm
             // 
-            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(411, 346);
             this.Name = "WelcomeForm";
             this.Load += new System.EventHandler(this.WelcomeForm_Load_1);
             this.ResumeLayout(false);

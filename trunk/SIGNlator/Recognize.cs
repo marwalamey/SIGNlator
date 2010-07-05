@@ -9,11 +9,12 @@ using WaveLib.AudioMixer;
 
 namespace SIGNlator
 {
-    public partial class Recognize : Form
+    public partial class Recognize : Boundary
     {
         private bool Save = false;
         private Core core = new Core();
         private List<string> StoryName = new List<string>();
+        int counterRec = 0;
 
 
         public Recognize()
@@ -157,6 +158,92 @@ namespace SIGNlator
             }
             MotAndtxt.Reset_MotionAndText();
 
+        }
+
+        private void Record_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (counterRec == 0)
+            {
+                counterRec++;
+                pictureBox1.BackgroundImage = new Bitmap("RecOff copy.gif");
+                core.Record_Speech();
+
+            }
+            else if (counterRec == 1)
+            {
+                counterRec = 0;
+                pictureBox1.BackgroundImage = new Bitmap("RecOff1 copy.gif");
+                core.Save_Speech();
+                List<int> mot = core.Run_Recognizer(false);
+                int i = 0;
+                int NoOfMot = mot.Count;
+                for (i = 0; i < NoOfMot; i++)
+                {
+
+                    Change_Motion(mot[i]);
+
+
+                }
+                mot.Clear();
+            }
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
+            int IsSaved = core.Save_Story(SaveStoryName.Text);
+            if (IsSaved == 1)
+            {
+                MessageBox.Show("Story saved");
+                StoryNameCBox.Items.Clear();
+                StoryName = core.Retrieve_Saved_Stories();
+                for (int i = 0; i < StoryName.Count; i++)
+                {
+                    StoryNameCBox.Items.Add(StoryName[i]);
+                }
+            }
+            else
+                MessageBox.Show("Error saving story");
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            MixerTest.MixerForm mixerForm = new MixerTest.MixerForm();
+            mixerForm.Show();
+
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
+
+            for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
+            {
+                InputText.Clear();
+                InputText.Text += " " + MotAndtxt.getText()[i];
+                Change_Motion(MotAndtxt.getMotioNo()[i]);
+            }
+            MotAndtxt.Reset_MotionAndText();
         }
 
 
