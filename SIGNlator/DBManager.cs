@@ -41,7 +41,41 @@ namespace SIGNlator
         public MotionAndPicture Get_Motion_And_Picture(string InputWord)
         {
             //to be changed
+            int mot=Get_Motion(InputWord);
+            string picture = Get_Picture(InputWord);
+            MotAndPic.setMotionNo(mot);
+            MotAndPic.setPic(picture);
+
             return MotAndPic;
+        }
+        /// <summary>
+        /// gets all words that have assgined pictures
+        /// </summary>
+        /// <returns></returns>
+       public List<string> Get_Words_With_Pictures()
+       // public void Get_Words_With_Pictures()
+        {
+            string r = "";
+            SqlDataReader reader = null;
+            List<string> WordsWithPic = new List<string>();
+
+            //reader = select("GetWordsWithPicture " + "N'" + "'");
+            reader = select("GetWordsWithPicture ");
+
+            while (reader.Read())
+            {
+                
+
+                r = Convert.ToString(reader[0]);
+                WordsWithPic.Add(r);
+                
+            }
+            //close the connection
+            sqlCon.Close();
+
+            
+          return WordsWithPic;
+
         }
         /// <summary>
         /// Get comuter name and 
@@ -95,6 +129,31 @@ namespace SIGNlator
             return reader;
 
         }
+        /// <summary>
+        /// Get picture to be displayed in the learning mode
+        /// </summary>
+        /// <param name="InputWord"></param>
+        /// <returns></returns>
+        public string Get_Picture(string InputWord)
+        {
+            string r ="";
+            SqlDataReader reader = null;
+
+            reader = select("Get_Picture " + "N'" + InputWord + "'");
+
+            while (reader.Read())
+            {
+                r = Convert.ToString(reader[0]);
+            }
+            //close the connection
+            sqlCon.Close();
+
+            return r;
+
+
+        }
+
+
 
     }
 }

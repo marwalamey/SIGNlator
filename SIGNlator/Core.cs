@@ -21,7 +21,7 @@ namespace SIGNlator
         private SavedStory SaveStory = new SavedStory();
         private MotionAndPicture MotAndPic = new MotionAndPicture();
         List<MotionAndPicture> ListMotAndPic = new List<MotionAndPicture>();
-        private int Pic; //to be changed to type 
+        private string Pic; //to be changed to type 
         
 
 
@@ -115,6 +115,13 @@ namespace SIGNlator
         {
             return SaveStory.Play_Saved_Stories(SelectedStoryName);
         }
-
+        public List<string> get_Words_With_Pictures()
+        {
+            List<string> WordsWithPictures= new List<string>();
+            WordsWithPictures = DBMgr.Get_Words_With_Pictures();
+            
+            //DBMgr.Get_Words_With_Pictures();
+            return WordsWithPictures;
+        }
     }
 }

@@ -7,7 +7,7 @@ namespace SIGNlator
     public class MotionAndPicture
     {
         private int MotionNo;
-        private int Picture;
+        private string Picture;
         public void setMotionNo(int Mot)
         {
             MotionNo = Mot;
@@ -16,11 +16,12 @@ namespace SIGNlator
         {
             return MotionNo;
         }
-        public void setPic(int pic)
+        public void setPic(string pic)
         {
+            Picture = pic;
             //MotionNo = Mot;
         }
-        public int getPic()
+        public string getPic()
         {
             return Picture;
         }

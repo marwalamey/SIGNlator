@@ -13,7 +13,7 @@ namespace SIGNlator
     {
 
         public int Language;
-        public Core core;
+        public Core core= new Core();
         public Boundary()
         {
             InitializeComponent();
