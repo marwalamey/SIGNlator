@@ -10,6 +10,7 @@ namespace SIGNlator
         List<string> StoryNames = new List<string>();
         List<int> MotionSequence = new List<int>();
         MotionAndText MotAndTxt = new MotionAndText();
+        StreamReader read;
 
 
 
@@ -98,7 +99,7 @@ namespace SIGNlator
                 }
             }
             extraString += @"Saved Stories\";
-            TextReader reader = new StreamReader(extraString + StoryName);
+            StreamReader reader = new StreamReader(extraString + StoryName);
 
             // read a line from file
             string line;
@@ -113,6 +114,33 @@ namespace SIGNlator
             // close the stream
             reader.Close();
             return MotAndTxt;
+        }
+        public bool Delete_Saved_Story(string StoryName)
+        {
+            try
+            {
+                string extraString = System.Reflection.Assembly.GetExecutingAssembly().Location; //path of application
+                for (int i = extraString.Length - 1; i > 0; i--)
+                {
+                    if (extraString[i] == '\\')
+                    {
+                        extraString = extraString.Remove(i + 1);
+                        break;
+                    }
+                }
+                extraString += @"Saved Stories\";
+              //  read = new StreamReader(extraString + StoryName);
+                File.Delete(extraString + StoryName);
+
+                //read.Close();
+                return true;
+
+            }
+            catch (Exception)
+            {
+               // read.Close();
+                return false;
+            }
         }
     }
 }

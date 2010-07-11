@@ -11,17 +11,22 @@ namespace SIGNlator
     public partial class WelcomeForm : Boundary
     {
         int language;
-
+        
         public WelcomeForm()
         {
             InitializeComponent();
+            
+            
+
+
+            
         }
 
       
 
         private void WelcomeForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void InitializeComponent()
