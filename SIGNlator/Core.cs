@@ -54,7 +54,27 @@ namespace SIGNlator
             
 
         }
+        /// <summary>
+        /// searches in the unvowelized column
+        /// </summary>
+        /// <param name="wordInSentence"></param>
+        /// <returns></returns>
         public int Run_Text_To_Sign(string wordInSentence)
+        {
+            MotionNo = DBMgr.Get_Motion_TTS(wordInSentence);
+            if (MotionNo != 0)
+                {
+                MotionSeq.Add(MotionNo);
+                Text.Add(wordInSentence);
+            }
+            else
+            {
+                MotionNo = -1;
+            }
+            return MotionNo;
+
+        }
+        public int Run_Text_To_Sign_Vowelized(string wordInSentence)
         {
             MotionNo = DBMgr.Get_Motion(wordInSentence);
             if (MotionNo != 0)
@@ -67,7 +87,6 @@ namespace SIGNlator
                 MotionNo = -1;
             }
             return MotionNo;
-
         }
         /// <summary>
         /// To be called in learn mode for translating text to sign
@@ -122,6 +141,19 @@ namespace SIGNlator
             
             //DBMgr.Get_Words_With_Pictures();
             return WordsWithPictures;
+        }
+        public void MotionSeq_Clear()
+        {
+            MotionSeq.Clear();
+        }
+        public void Text_Clear()
+        {
+            Text.Clear();
+        }
+        public bool Delete_Story(string StoryName)
+        {
+            bool isSaved=SaveStory.Delete_Saved_Story(StoryName);
+            return isSaved;
         }
     }
 }

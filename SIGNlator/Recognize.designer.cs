@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recognize));
             this.TranslateTTS = new System.Windows.Forms.Button();
             this.SaveStoryName = new System.Windows.Forms.TextBox();
@@ -37,18 +38,25 @@
             this.axQuest3DCtrl41 = new AxQuest3DActiveX4Lib.AxQuest3DCtrl4();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StoryNameCBox = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pb_AdjustMic = new System.Windows.Forms.PictureBox();
+            this.pb_PlaySaved = new System.Windows.Forms.PictureBox();
+            this.pb_Save = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ToolTip_Save = new System.Windows.Forms.ToolTip(this.components);
+            this.Play_Saved_ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Adjust_Mic_Tooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.Recognize_ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Delete_Story = new System.Windows.Forms.PictureBox();
+            this.Delete_ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TextToSpeech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).BeginInit();
             this.SuspendLayout();
             // 
             // TranslateTTS
@@ -63,7 +71,7 @@
             // 
             // SaveStoryName
             // 
-            this.SaveStoryName.Location = new System.Drawing.Point(461, 542);
+            this.SaveStoryName.Location = new System.Drawing.Point(427, 558);
             this.SaveStoryName.Name = "SaveStoryName";
             this.SaveStoryName.Size = new System.Drawing.Size(103, 20);
             this.SaveStoryName.TabIndex = 9;
@@ -87,12 +95,13 @@
             this.InputText.Size = new System.Drawing.Size(222, 327);
             this.InputText.TabIndex = 6;
             this.InputText.Text = "";
+            this.InputText.TextChanged += new System.EventHandler(this.InputText_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(361, 545);
+            this.label1.Location = new System.Drawing.Point(327, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 8;
@@ -101,11 +110,12 @@
             // axQuest3DCtrl41
             // 
             this.axQuest3DCtrl41.Enabled = true;
-            this.axQuest3DCtrl41.Location = new System.Drawing.Point(378, 271);
+            this.axQuest3DCtrl41.Location = new System.Drawing.Point(389, 284);
             this.axQuest3DCtrl41.Name = "axQuest3DCtrl41";
             this.axQuest3DCtrl41.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axQuest3DCtrl41.OcxState")));
-            this.axQuest3DCtrl41.Size = new System.Drawing.Size(440, 243);
+            this.axQuest3DCtrl41.Size = new System.Drawing.Size(442, 246);
             this.axQuest3DCtrl41.TabIndex = 14;
+            this.axQuest3DCtrl41.OnEvent += new AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEventHandler(this.axQuest3DCtrl41_OnEvent);
             // 
             // pictureBox1
             // 
@@ -113,11 +123,12 @@
             this.pictureBox1.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(565, 222);
+            this.pictureBox1.Location = new System.Drawing.Point(588, 229);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 39);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.Recognize_ToolTip.SetToolTip(this.pictureBox1, "Press here then narrate your story\r\nthen press again to see the transaltion");
             this.pictureBox1.MouseLeave += new System.EventHandler(this.RecBtn_Leave);
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.RecBtn_hover);
@@ -125,55 +136,58 @@
             // StoryNameCBox
             // 
             this.StoryNameCBox.FormattingEnabled = true;
-            this.StoryNameCBox.Location = new System.Drawing.Point(694, 542);
+            this.StoryNameCBox.Location = new System.Drawing.Point(660, 559);
             this.StoryNameCBox.Name = "StoryNameCBox";
             this.StoryNameCBox.Size = new System.Drawing.Size(144, 21);
             this.StoryNameCBox.TabIndex = 6;
             // 
-            // pictureBox2
+            // pb_AdjustMic
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::SIGNlator.Properties.Resources.VistaPlayStopPauseIconsPreview1_copy;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(299, 425);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 50);
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.Adjustbtn_Leave);
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
-            this.pictureBox2.MouseHover += new System.EventHandler(this.Adjustbtn_Hover);
+            this.pb_AdjustMic.BackColor = System.Drawing.Color.Transparent;
+            this.pb_AdjustMic.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_AdjustMic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_AdjustMic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_AdjustMic.Location = new System.Drawing.Point(316, 426);
+            this.pb_AdjustMic.Name = "pb_AdjustMic";
+            this.pb_AdjustMic.Size = new System.Drawing.Size(50, 45);
+            this.pb_AdjustMic.TabIndex = 16;
+            this.pb_AdjustMic.TabStop = false;
+            this.Adjust_Mic_Tooltip.SetToolTip(this.pb_AdjustMic, "Adjust your mic parameters");
+            this.pb_AdjustMic.MouseLeave += new System.EventHandler(this.Adjust_leave);
+            this.pb_AdjustMic.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.pb_AdjustMic.MouseHover += new System.EventHandler(this.Adjust_hover);
             // 
-            // pictureBox3
+            // pb_PlaySaved
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::SIGNlator.Properties.Resources.play;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(301, 311);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(61, 50);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.Playbtn_leave);
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.Playbtn_hover);
+            this.pb_PlaySaved.BackColor = System.Drawing.Color.Transparent;
+            this.pb_PlaySaved.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_PlaySaved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_PlaySaved.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_PlaySaved.Location = new System.Drawing.Point(316, 324);
+            this.pb_PlaySaved.Name = "pb_PlaySaved";
+            this.pb_PlaySaved.Size = new System.Drawing.Size(50, 45);
+            this.pb_PlaySaved.TabIndex = 17;
+            this.pb_PlaySaved.TabStop = false;
+            this.ToolTip_Save.SetToolTip(this.pb_PlaySaved, "Save the last recognized story");
+            this.pb_PlaySaved.MouseLeave += new System.EventHandler(this.PlayBtn_Leave);
+            this.pb_PlaySaved.Click += new System.EventHandler(this.pictureBox3_Click_1);
+            this.pb_PlaySaved.MouseHover += new System.EventHandler(this.PlayBtn_Hover);
             // 
-            // pictureBox4
+            // pb_Save
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::SIGNlator.Properties.Resources.Save;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(306, 375);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 45);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.Savebtn_Leave);
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
-            this.pictureBox4.MouseHover += new System.EventHandler(this.Savebtn_Hover);
+            this.pb_Save.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Save.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_Save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_Save.Location = new System.Drawing.Point(316, 375);
+            this.pb_Save.Name = "pb_Save";
+            this.pb_Save.Size = new System.Drawing.Size(50, 45);
+            this.pb_Save.TabIndex = 18;
+            this.pb_Save.TabStop = false;
+            this.Play_Saved_ToolTip.SetToolTip(this.pb_Save, "Play selected saved story");
+            this.pb_Save.MouseLeave += new System.EventHandler(this.Savebtn_Leave);
+            this.pb_Save.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            this.pb_Save.MouseHover += new System.EventHandler(this.Savebtn_Hover);
             // 
             // label2
             // 
@@ -190,7 +204,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(615, 545);
+            this.label3.Location = new System.Drawing.Point(581, 562);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 20;
@@ -206,26 +220,89 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ToolTip_Save
+            // 
+            this.ToolTip_Save.AutomaticDelay = 0;
+            this.ToolTip_Save.AutoPopDelay = 0;
+            this.ToolTip_Save.InitialDelay = 0;
+            this.ToolTip_Save.IsBalloon = true;
+            this.ToolTip_Save.ReshowDelay = 0;
+            this.ToolTip_Save.Tag = "";
+            this.ToolTip_Save.Popup += new System.Windows.Forms.PopupEventHandler(this.ToolTip_Save_Popup);
+            // 
+            // Play_Saved_ToolTip
+            // 
+            this.Play_Saved_ToolTip.AutomaticDelay = 0;
+            this.Play_Saved_ToolTip.AutoPopDelay = 0;
+            this.Play_Saved_ToolTip.InitialDelay = 0;
+            this.Play_Saved_ToolTip.IsBalloon = true;
+            this.Play_Saved_ToolTip.ReshowDelay = 0;
+            this.Play_Saved_ToolTip.Tag = "";
+            // 
+            // Adjust_Mic_Tooltip
+            // 
+            this.Adjust_Mic_Tooltip.AutomaticDelay = 0;
+            this.Adjust_Mic_Tooltip.AutoPopDelay = 0;
+            this.Adjust_Mic_Tooltip.InitialDelay = 0;
+            this.Adjust_Mic_Tooltip.IsBalloon = true;
+            this.Adjust_Mic_Tooltip.ReshowDelay = 0;
+            this.Adjust_Mic_Tooltip.Tag = "";
+            // 
+            // Recognize_ToolTip
+            // 
+            this.Recognize_ToolTip.AutomaticDelay = 0;
+            this.Recognize_ToolTip.AutoPopDelay = 0;
+            this.Recognize_ToolTip.InitialDelay = 0;
+            this.Recognize_ToolTip.IsBalloon = true;
+            this.Recognize_ToolTip.ReshowDelay = 0;
+            this.Recognize_ToolTip.Tag = "";
+            // 
+            // Delete_Story
+            // 
+            this.Delete_Story.BackColor = System.Drawing.Color.Transparent;
+            this.Delete_Story.BackgroundImage = global::SIGNlator.Properties.Resources.DeleteRed;
+            this.Delete_Story.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Delete_Story.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Delete_Story.Location = new System.Drawing.Point(810, 556);
+            this.Delete_Story.Name = "Delete_Story";
+            this.Delete_Story.Size = new System.Drawing.Size(36, 30);
+            this.Delete_Story.TabIndex = 23;
+            this.Delete_Story.TabStop = false;
+            this.Delete_ToolTip.SetToolTip(this.Delete_Story, "Delete the saved story");
+            this.Delete_Story.MouseLeave += new System.EventHandler(this.Delete_Leave);
+            this.Delete_Story.Click += new System.EventHandler(this.Delete_Story_Click);
+            this.Delete_Story.MouseHover += new System.EventHandler(this.Delete_Hover);
+            // 
+            // Delete_ToolTip
+            // 
+            this.Delete_ToolTip.AutomaticDelay = 0;
+            this.Delete_ToolTip.AutoPopDelay = 0;
+            this.Delete_ToolTip.InitialDelay = 0;
+            this.Delete_ToolTip.IsBalloon = true;
+            this.Delete_ToolTip.ReshowDelay = 0;
+            this.Delete_ToolTip.Tag = "";
+            // 
             // Recognize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(936, 681);
+            this.ClientSize = new System.Drawing.Size(956, 705);
+            this.Controls.Add(this.Delete_Story);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pb_Save);
+            this.Controls.Add(this.pb_PlaySaved);
+            this.Controls.Add(this.pb_AdjustMic);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.axQuest3DCtrl41);
             this.Controls.Add(this.SaveStoryName);
             this.Controls.Add(this.StoryNameCBox);
             this.Controls.Add(this.TextToSpeech);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Name = "Recognize";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -235,9 +312,10 @@
             this.TextToSpeech.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,13 +331,19 @@
         private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox StoryNameCBox;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pb_AdjustMic;
+        private System.Windows.Forms.PictureBox pb_PlaySaved;
+        private System.Windows.Forms.PictureBox pb_Save;
         private System.Windows.Forms.RichTextBox InputText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip ToolTip_Save;
+        private System.Windows.Forms.ToolTip Play_Saved_ToolTip;
+        private System.Windows.Forms.ToolTip Adjust_Mic_Tooltip;
+        private System.Windows.Forms.ToolTip Recognize_ToolTip;
+        private System.Windows.Forms.PictureBox Delete_Story;
+        private System.Windows.Forms.ToolTip Delete_ToolTip;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }

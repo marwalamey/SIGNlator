@@ -23,26 +23,52 @@ namespace SIGNlator
         {
             InitializeComponent();
             welcomeForm = wf;
+            StoryName = core.Retrieve_Saved_Stories();
+            for (int i = 0; i < StoryName.Count; i++)
+            {
+                StoryNameCBox.Items.Add(StoryName[i]);
+            }
         }
         public Recognize()
         {
             InitializeComponent();
             toLearn = false;
+             StoryName = core.Retrieve_Saved_Stories();
+            for (int i = 0; i < StoryName.Count; i++)
+            {
+                StoryNameCBox.Items.Add(StoryName[i]);
+            }
             
         }
 
         private void TranslateTTS_Click(object sender, EventArgs e)
         {
-            string[] wordsInSentence = InputText.Text.Split(' ');
+            core.Text_Clear();
+            core.MotionSeq_Clear();
+            string inputTextString = InputText.Text;
+            string[] wordsInSentence = inputTextString.Split(new char[] { '\r', '\n', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+ 
             int motionNo;
-            for (int i = 0; i < wordsInSentence.Length; i++)
+            int motionNo_Vowelized;
+           // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
+            for (int i =0; i < wordsInSentence.Length; i++)
             {
                 motionNo = core.Run_Text_To_Sign(wordsInSentence[i]);
-                if (motionNo != -1)
+                motionNo_Vowelized = core.Run_Text_To_Sign_Vowelized(wordsInSentence[i]);
+                if (motionNo != -1 || motionNo_Vowelized!=-1 )
                 {
                     //call quest here
                     //InputText.Text += Convert.ToString(motionNo); //only for check
-                    Change_Motion(motionNo);
+                    if ((motionNo == motionNo_Vowelized)||(motionNo!=-1 && motionNo_Vowelized==-1))
+                    {
+                        Change_Motion(motionNo);
+
+                    }
+                    else if (motionNo_Vowelized!= -1 && motionNo==-1)
+                    {
+                        Change_Motion(motionNo_Vowelized);
+                        
+                    }
                 }
                 else
                 {
@@ -245,15 +271,24 @@ namespace SIGNlator
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
-            MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
 
-            for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
+            try
             {
                 InputText.Clear();
-                InputText.Text += " " + MotAndtxt.getText()[i];
-                Change_Motion(MotAndtxt.getMotioNo()[i]);
+                MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
+
+                for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
+                {
+                    
+                    InputText.Text += " " + MotAndtxt.getText()[i];
+                    Change_Motion(MotAndtxt.getMotioNo()[i]);
+                }
+                MotAndtxt.Reset_MotionAndText();
             }
-            MotAndtxt.Reset_MotionAndText();
+            catch(Exception)
+            {
+                MessageBox.Show("Please choose a saved story to play");
+            }
         }
 
         private void RecBtn_hover(object sender, EventArgs e)
@@ -269,42 +304,21 @@ namespace SIGNlator
 
         }
 
-        private void Playbtn_hover(object sender, EventArgs e)
-        {
-            pictureBox3.Size = new System.Drawing.Size(57, 46);
-        }
-
-        private void Playbtn_leave(object sender, EventArgs e)
-        {
-            pictureBox3.Size = new System.Drawing.Size(61, 50);
-
-        }
-
+ 
         private void Savebtn_Hover(object sender, EventArgs e)
         {
-            pictureBox4.Size = new System.Drawing.Size(46, 41);
+            pb_Save.Size = new System.Drawing.Size(46, 41);
 
         }
 
         private void Savebtn_Leave(object sender, EventArgs e)
         {
-            pictureBox4.Size = new System.Drawing.Size(50, 45);
+            pb_Save.Size = new System.Drawing.Size(50, 45);
             
 
         }
 
-        private void Adjustbtn_Hover(object sender, EventArgs e)
-        {
-            pictureBox2.Size = new System.Drawing.Size(59, 46);
-
-
-        }
-
-        private void Adjustbtn_Leave(object sender, EventArgs e)
-        {
-            pictureBox2.Size = new System.Drawing.Size(63, 50);
-            
-        }
+   
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -323,6 +337,115 @@ namespace SIGNlator
             }
 
         }
+
+        private void InputText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            
+            
+           
+            
+        }
+
+        private void ToolTip_Save_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void axQuest3DCtrl41_OnEvent(object sender, AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEvent e)
+        {
+
+        }
+
+        private void PlayBtn_Hover(object sender, EventArgs e)
+        {
+            pb_PlaySaved.Size = new System.Drawing.Size(46, 41);
+
+        }
+
+        private void PlayBtn_Leave(object sender, EventArgs e)
+        {
+            pb_PlaySaved.Size = new System.Drawing.Size(50, 45);
+
+        }
+
+        private void Adjust_hover(object sender, EventArgs e)
+        {
+            pb_AdjustMic.Size = new System.Drawing.Size(46, 41);
+
+        }
+
+        private void Adjust_leave(object sender, EventArgs e)
+        {
+            pb_AdjustMic.Size = new System.Drawing.Size(50, 45);
+
+        }
+
+        private void DeleteStory_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Delete_Hover(object sender, EventArgs e)
+        {
+            Delete_Story.Size = new System.Drawing.Size(32,26);
+        }
+
+        private void Delete_Leave(object sender, EventArgs e)
+        {
+            Delete_Story.Size = new System.Drawing.Size(36, 30);
+
+        }
+
+        private void Delete_Story_Click(object sender, EventArgs e)
+        {
+            if (StoryNameCBox.SelectedItem != null)
+            {
+                string SelectedItems = StoryNameCBox.SelectedItem.ToString();
+                DialogResult dr;
+                dr = MessageBox.Show("Are you sure you wish to delete " +
+                    StoryNameCBox.SelectedItem.ToString() + "?",
+                                "Confirmation",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question);
+                if (dr == DialogResult.No)
+                    return;
+                else//law das 3la yes
+                {
+                    bool isDeleted = core.Delete_Story(StoryNameCBox.SelectedItem.ToString());
+                    if (isDeleted)
+                    {
+                        MessageBox.Show(SelectedItems + " Deleted successfully");
+                        StoryNameCBox.Items.Remove(SelectedItems);
+
+                    }
+                    else//law kan 7asal error gowa
+                    {
+                        MessageBox.Show("Error in deleting " + SelectedItems);
+                    }
+                }
+
+            }
+            else //law makansh fih 7aga m5tarha fel drop down menu
+            {
+                if (StoryNameCBox.Items.Count != 0)//law kan fih 7agat saved bas ma5tarsh
+                {
+                    MessageBox.Show("Please select a story to delete");
+                }
+                else//law makansh fih stories aslan w howa das ymsa7
+                {
+                    MessageBox.Show("No saved stories exist");
+
+                }
+            }
+
+        }
+
+      
 
     
 

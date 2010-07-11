@@ -15,7 +15,7 @@ namespace SIGNlator
         private System.Data.SqlClient.SqlCommand sqlCmd = new System.Data.SqlClient.SqlCommand();
         private MotionAndPicture MotAndPic = new MotionAndPicture();
         /// <summary>
-        /// Return the motion number to run quest
+        /// Return the motion number if the vowelized word to run quest
         /// </summary>
         /// <returns></returns>
         public int Get_Motion(string InputWord)
@@ -34,6 +34,38 @@ namespace SIGNlator
 
             return r;
         }
+        /// <summary>
+        /// returns motion no of the unvowelized word
+        /// </summary>
+        /// <param name="InputWord"></param>
+        /// <returns></returns>
+        public int Get_Motion_TTS(string InputWord)
+        {
+            try
+            {
+                int r = 0;
+                SqlDataReader reader = null;
+
+                reader = select("GetSign_From_Text " + "N'" + InputWord + "'");
+
+                while (reader.Read())
+                {
+                    r = Convert.ToInt32(reader[0]);
+                }
+                //close the connection
+                sqlCon.Close();
+
+                return r;
+            }
+            catch (Exception)
+            {
+                sqlCon.Close();
+                return -1;
+                
+            }
+            
+        }
+
         /// <summary>
         /// Return motion number and picture of the motion for the learning mode
         /// </summary>
