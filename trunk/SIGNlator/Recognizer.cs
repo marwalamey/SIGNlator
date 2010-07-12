@@ -26,7 +26,7 @@ namespace SIGNlator
         {
             // record from microphone
             mciSendString("open new Type waveaudio Alias recsound", "", 0, 0);
-            mciSendString("set recsound bitspersample 16 channels 2 alignment 2 samplespersec 16000 bytespersec 64000 format tag pcm wait", "", 0, 0);
+            mciSendString("set recsound bitspersample 16 channels 1 alignment 2 samplespersec 16000 bytespersec 64000 format tag pcm wait", "", 0, 0);
             mciSendString("record recsound", "", 0, 0);
         }
         public void Save_Speech()
@@ -44,8 +44,8 @@ namespace SIGNlator
         public List<string> Recognize()
         {
             string path = get_path();
-            //string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
-            //OP = Exec("HVite -C RecConfig -H model/hmm3/macros.mmf -H model/hmm3/hmmdefs.mmf  -l * -i out.mlf -w net.slf -p 0.0 -s 5.0 -S testWav.scp Dict.txt monophones0.txt", path);
+            string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
+            OP = Exec("HVite -C RecConfig.conf  -H model/hmm15/macros.mmf -H model/hmm15/hmmdefs.mmf -l  *  -i out.mlf -w networkLM.slf -p 0.0 -s 5.0 -S testWav.scp dictV4.txt tiedlist ", path);
             List<string> temp = new List<string>();
             temp = get_words();
 

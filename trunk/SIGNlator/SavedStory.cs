@@ -100,7 +100,7 @@ namespace SIGNlator
             }
             extraString += @"Saved Stories\";
             System.IO.StreamReader reader =
-              new System.IO.StreamReader(extraString + StoryName, Encoding.GetEncoding("iso-8859-6"));
+              new System.IO.StreamReader(extraString + StoryName);
            // StreamReader reader = new StreamReader(extraString + StoryName);
 
             // read a line from file
