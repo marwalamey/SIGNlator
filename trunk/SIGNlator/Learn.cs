@@ -14,10 +14,18 @@ namespace SIGNlator
     {
         private System.Data.SqlClient.SqlConnection sqlCon = new System.Data.SqlClient.SqlConnection();
         private System.Data.SqlClient.SqlCommand sqlCom = new System.Data.SqlClient.SqlCommand();
+        private bool toRecognize = false;
+        Form welcomeForm = new Form();
         //private Core core = new Core();
         public Learn()
         {
             InitializeComponent();
+        }
+        public Learn(Form frm)
+        {
+            InitializeComponent();
+            welcomeForm = frm;
+ 
         }
 
         ////private void TranslateTTS_Click(object sender, EventArgs e)
@@ -142,9 +150,21 @@ namespace SIGNlator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Recognize rec = new Recognize();
+            toRecognize = true;
+            Recognize rec = new Recognize(welcomeForm);
             rec.Show();
             this.Close();
+
+        }
+
+        private void Learn_Closed(object sender, FormClosedEventArgs e)
+        {
+            if (toRecognize == false)
+            {
+                welcomeForm.Close();
+                
+
+            }
 
         }
 

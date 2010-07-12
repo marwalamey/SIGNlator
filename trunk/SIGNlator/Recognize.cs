@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WaveLib.AudioMixer;
+using System.Globalization;
+using System.Threading;
+
 
 namespace SIGNlator
 {
@@ -16,8 +19,12 @@ namespace SIGNlator
         private List<string> StoryName = new List<string>();
         int counterRec = 0;
         Form welcomeForm = new Form();
-        bool toLearn = false;
+        public bool toLearn = false;
+        public static void ThreadProc()
+        {
+            Application.Run(new Learn());
 
+        }
 
         public Recognize(Form wf)
         {
@@ -138,7 +145,8 @@ namespace SIGNlator
 
         private void Recognize_Load(object sender, EventArgs e)
         {
-            
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar-eg");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("ar-eg");
             string extraString = System.Reflection.Assembly.GetExecutingAssembly().Location; //path of application
            
             for (int i = extraString.Length - 1; i > 0; i--)
@@ -323,13 +331,16 @@ namespace SIGNlator
         private void button1_Click(object sender, EventArgs e)
         {
             toLearn = true;
-            Learn lrn = new Learn();
+            Learn lrn = new Learn(welcomeForm);
             lrn.Show();
             this.Close();
+            //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+            //t.Start();
+            //this.Close();
            
         }
 
-        private void Recognize_FormClosed(object sender, FormClosedEventArgs e)
+        public void Recognize_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (toLearn == false)
             {
