@@ -99,13 +99,16 @@ namespace SIGNlator
                 }
             }
             extraString += @"Saved Stories\";
-            StreamReader reader = new StreamReader(extraString + StoryName);
+            System.IO.StreamReader reader =
+              new System.IO.StreamReader(extraString + StoryName, Encoding.GetEncoding("iso-8859-6"));
+           // StreamReader reader = new StreamReader(extraString + StoryName);
 
             // read a line from file
             string line;
-            while (reader.Read() != -1)
+           // while (reader.Read() != -1)
+            while ((line = reader.ReadLine()) != null)
             {
-                line = reader.ReadLine();
+                //line = reader.ReadLine();
                 string[] TextMotln = line.Split(' ');
                 MotAndTxt.setMotionNo(Convert.ToInt32(TextMotln[1]));
                 MotAndTxt.setText(TextMotln[0]);

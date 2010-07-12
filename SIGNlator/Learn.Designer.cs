@@ -118,6 +118,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
             this.Load += new System.EventHandler(this.Learn_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Learn_Closed);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LearningPicBox)).EndInit();
             this.ResumeLayout(false);

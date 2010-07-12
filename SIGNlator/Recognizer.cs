@@ -44,8 +44,8 @@ namespace SIGNlator
         public List<string> Recognize()
         {
             string path = get_path();
-            string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
-            OP = Exec("HVite -C RecConfig -H model/hmm3/macros.mmf -H model/hmm3/hmmdefs.mmf  -l * -i out.mlf -w net.slf -p 0.0 -s 5.0 -S testWav.scp Dict.txt monophones0.txt", path);
+            //string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
+            //OP = Exec("HVite -C RecConfig -H model/hmm3/macros.mmf -H model/hmm3/hmmdefs.mmf  -l * -i out.mlf -w net.slf -p 0.0 -s 5.0 -S testWav.scp Dict.txt monophones0.txt", path);
             List<string> temp = new List<string>();
             temp = get_words();
 
