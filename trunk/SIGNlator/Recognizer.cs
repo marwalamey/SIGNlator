@@ -143,17 +143,18 @@ namespace SIGNlator
 
                 counter++;
                 string[] words = line.Split(' ');
-                if (counter >= 4)
+                if (counter >= 3)
                 {
-                    if (words[2] != "sil")
+                    if (words[0] == ".")
+                    {
+                        break;
+                    }
+                    if (words[2] != "sil" && words[2] != "!ENTER" && words[2] != "!EXIT")
                     {
                         temp.Add(words[2]);
 
                     }
-                    if (words[2] == "sil")
-                    {
-                        break;
-                    }
+                    
 
 
 
