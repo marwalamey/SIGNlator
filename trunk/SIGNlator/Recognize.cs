@@ -239,6 +239,14 @@ namespace SIGNlator
                 pictureBox1.BackgroundImage = new Bitmap("RecOff1 copy.gif");
                 core.Save_Speech();
                 List<int> mot = core.Run_Recognizer(false);
+                List<string> RecWords = core.Return_Words();
+                int NoOfWords = RecWords.Count;
+                InputText.Clear();
+
+                for (int k = 0; k < NoOfWords;k++ )
+                {
+                    InputText.Text += RecWords[k];
+                }
                 int i = 0;
                 int NoOfMot = mot.Count;
                 for (i = 0; i < NoOfMot; i++)
