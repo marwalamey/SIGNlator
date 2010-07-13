@@ -22,8 +22,11 @@ namespace SIGNlator
         private MotionAndPicture MotAndPic = new MotionAndPicture();
         List<MotionAndPicture> ListMotAndPic = new List<MotionAndPicture>();
         private string Pic; //to be changed to type 
-        
 
+        public List<string> Return_Words()
+        {
+            return Word;
+        }
 
         public List<int> Run_Recognizer(bool pic)
         {
