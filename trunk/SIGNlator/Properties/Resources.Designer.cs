@@ -60,6 +60,13 @@ namespace SIGNlator.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap DeleteRed {
+            get {
+                object obj = ResourceManager.GetObject("DeleteRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap LearnBackground {
             get {
                 object obj = ResourceManager.GetObject("LearnBackground", resourceCulture);
