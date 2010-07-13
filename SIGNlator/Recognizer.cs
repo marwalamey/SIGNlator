@@ -45,8 +45,9 @@ namespace SIGNlator
         {
             string path = get_path();
             string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
-            OP = Exec("HVite -C RecConfig.conf  -H model/hmm15/macros.mmf -H model/hmm15/hmmdefs.mmf -l  *  -i out.mlf -w networkLM.slf -p 0.0 -s 5.0 -S testWav.scp dictV4.txt tiedlist ", path);
+            OP = Exec("HVite -C RecConfig.conf  -H model/hmm18/macros.mmf -H model/hmm18/hmmdefs.mmf -l  *  -i out.mlf -w networkLM.slf -p 0.0 -s 5.0 -S testWav.scp dictV4.txt tiedlist", path);
             List<string> temp = new List<string>();
+            if (OP == " WARNING [-8013]  ReadDict: !NULL entry contains pronunciation in HVite\r\n")
             temp = get_words();
 
 
@@ -162,6 +163,7 @@ namespace SIGNlator
 
 
             }
+            file.Close();
             return temp;
 
         }
