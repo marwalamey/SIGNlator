@@ -245,7 +245,7 @@ namespace SIGNlator
 
                 for (int k = 0; k < NoOfWords;k++ )
                 {
-                    InputText.Text += RecWords[k];
+                    InputText.Text += RecWords[k]+" ";
                 }
                 int i = 0;
                 int NoOfMot = mot.Count;

@@ -37,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.axQuest3DCtrl41 = new AxQuest3DActiveX4Lib.AxQuest3DCtrl4();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.StoryNameCBox = new System.Windows.Forms.ComboBox();
             this.pb_AdjustMic = new System.Windows.Forms.PictureBox();
             this.pb_PlaySaved = new System.Windows.Forms.PictureBox();
             this.pb_Save = new System.Windows.Forms.PictureBox();
@@ -50,6 +49,7 @@
             this.Recognize_ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.Delete_Story = new System.Windows.Forms.PictureBox();
             this.Delete_ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.StoryNameCBox = new System.Windows.Forms.ComboBox();
             this.TextToSpeech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -134,14 +134,6 @@
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.RecBtn_hover);
             // 
-            // StoryNameCBox
-            // 
-            this.StoryNameCBox.FormattingEnabled = true;
-            this.StoryNameCBox.Location = new System.Drawing.Point(660, 559);
-            this.StoryNameCBox.Name = "StoryNameCBox";
-            this.StoryNameCBox.Size = new System.Drawing.Size(144, 21);
-            this.StoryNameCBox.TabIndex = 6;
-            // 
             // pb_AdjustMic
             // 
             this.pb_AdjustMic.BackColor = System.Drawing.Color.Transparent;
@@ -169,7 +161,7 @@
             this.pb_PlaySaved.Size = new System.Drawing.Size(50, 45);
             this.pb_PlaySaved.TabIndex = 17;
             this.pb_PlaySaved.TabStop = false;
-            this.ToolTip_Save.SetToolTip(this.pb_PlaySaved, "Save the last recognized story");
+            this.Play_Saved_ToolTip.SetToolTip(this.pb_PlaySaved, "Play selected saved story");
             this.pb_PlaySaved.MouseLeave += new System.EventHandler(this.PlayBtn_Leave);
             this.pb_PlaySaved.Click += new System.EventHandler(this.pictureBox3_Click_1);
             this.pb_PlaySaved.MouseHover += new System.EventHandler(this.PlayBtn_Hover);
@@ -185,7 +177,7 @@
             this.pb_Save.Size = new System.Drawing.Size(50, 45);
             this.pb_Save.TabIndex = 18;
             this.pb_Save.TabStop = false;
-            this.Play_Saved_ToolTip.SetToolTip(this.pb_Save, "Play selected saved story");
+            this.ToolTip_Save.SetToolTip(this.pb_Save, "Save the last recognized story");
             this.pb_Save.MouseLeave += new System.EventHandler(this.Savebtn_Leave);
             this.pb_Save.Click += new System.EventHandler(this.pictureBox4_Click_1);
             this.pb_Save.MouseHover += new System.EventHandler(this.Savebtn_Hover);
@@ -283,6 +275,18 @@
             this.Delete_ToolTip.ReshowDelay = 0;
             this.Delete_ToolTip.Tag = "";
             // 
+            // StoryNameCBox
+            // 
+            this.StoryNameCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StoryNameCBox.FormattingEnabled = true;
+            this.StoryNameCBox.Items.AddRange(new object[] {
+            "Reads",
+            "Updates"});
+            this.StoryNameCBox.Location = new System.Drawing.Point(660, 559);
+            this.StoryNameCBox.Name = "StoryNameCBox";
+            this.StoryNameCBox.Size = new System.Drawing.Size(144, 21);
+            this.StoryNameCBox.TabIndex = 24;
+            // 
             // Recognize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +294,7 @@
             this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(956, 705);
+            this.Controls.Add(this.StoryNameCBox);
             this.Controls.Add(this.Delete_Story);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -301,7 +306,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.axQuest3DCtrl41);
             this.Controls.Add(this.SaveStoryName);
-            this.Controls.Add(this.StoryNameCBox);
             this.Controls.Add(this.TextToSpeech);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
@@ -331,7 +335,6 @@
         private System.Windows.Forms.Label label1;
         private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox StoryNameCBox;
         private System.Windows.Forms.PictureBox pb_AdjustMic;
         private System.Windows.Forms.PictureBox pb_PlaySaved;
         private System.Windows.Forms.PictureBox pb_Save;
@@ -345,6 +348,7 @@
         private System.Windows.Forms.ToolTip Recognize_ToolTip;
         private System.Windows.Forms.PictureBox Delete_Story;
         private System.Windows.Forms.ToolTip Delete_ToolTip;
+        private System.Windows.Forms.ComboBox StoryNameCBox;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }
