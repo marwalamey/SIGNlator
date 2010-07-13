@@ -95,7 +95,6 @@ namespace SIGNlator
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome SIGNlator";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.WelcomeForm_Load_1);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WelcomeForm_FormClosed);
             this.ResumeLayout(false);
@@ -105,7 +104,7 @@ namespace SIGNlator
 
         private void WelcomeForm_Load_1(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             
             //this.TopMost = true;
             
