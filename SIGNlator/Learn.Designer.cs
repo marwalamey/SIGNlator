@@ -114,6 +114,7 @@
             this.Controls.Add(this.LearningPicBox);
             this.Controls.Add(this.VocabularyListBox);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "Learn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";

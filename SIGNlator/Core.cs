@@ -12,7 +12,7 @@ namespace SIGNlator
     {
         private DBManager DBMgr = new DBManager();
         private object SpeechWav;// to be of type wav
-        private List<int> MotionSeq = new List<int>();
+        public List<int> MotionSeq = new List<int>();
         private List<string> Text = new List<string>();
         private bool Picture;
         private List<string> Word = new List<string>();
