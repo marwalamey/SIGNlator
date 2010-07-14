@@ -50,6 +50,9 @@
             this.Delete_Story = new System.Windows.Forms.PictureBox();
             this.Delete_ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.StoryNameCBox = new System.Windows.Forms.ComboBox();
+            this.PlaySaved_lbl = new System.Windows.Forms.Label();
+            this.Save_lbl = new System.Windows.Forms.Label();
+            this.Mic_lbl = new System.Windows.Forms.Label();
             this.TextToSpeech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,6 +78,8 @@
             this.SaveStoryName.Name = "SaveStoryName";
             this.SaveStoryName.Size = new System.Drawing.Size(103, 20);
             this.SaveStoryName.TabIndex = 9;
+            this.SaveStoryName.TextChanged += new System.EventHandler(this.SaveStoryName_TextChanged);
+            this.SaveStoryName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SaveStoryName_KeyPress);
             // 
             // TextToSpeech
             // 
@@ -96,6 +101,7 @@
             this.InputText.Size = new System.Drawing.Size(222, 327);
             this.InputText.TabIndex = 6;
             this.InputText.Text = "";
+            this.InputText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InputText_KeyPress);
             this.InputText.TextChanged += new System.EventHandler(this.InputText_TextChanged);
             // 
             // label1
@@ -140,7 +146,7 @@
             this.pb_AdjustMic.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
             this.pb_AdjustMic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_AdjustMic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_AdjustMic.Location = new System.Drawing.Point(316, 426);
+            this.pb_AdjustMic.Location = new System.Drawing.Point(316, 467);
             this.pb_AdjustMic.Name = "pb_AdjustMic";
             this.pb_AdjustMic.Size = new System.Drawing.Size(50, 45);
             this.pb_AdjustMic.TabIndex = 16;
@@ -156,7 +162,7 @@
             this.pb_PlaySaved.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
             this.pb_PlaySaved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_PlaySaved.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_PlaySaved.Location = new System.Drawing.Point(316, 324);
+            this.pb_PlaySaved.Location = new System.Drawing.Point(316, 318);
             this.pb_PlaySaved.Name = "pb_PlaySaved";
             this.pb_PlaySaved.Size = new System.Drawing.Size(50, 45);
             this.pb_PlaySaved.TabIndex = 17;
@@ -172,7 +178,7 @@
             this.pb_Save.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
             this.pb_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_Save.Location = new System.Drawing.Point(316, 375);
+            this.pb_Save.Location = new System.Drawing.Point(316, 393);
             this.pb_Save.Name = "pb_Save";
             this.pb_Save.Size = new System.Drawing.Size(50, 45);
             this.pb_Save.TabIndex = 18;
@@ -287,6 +293,36 @@
             this.StoryNameCBox.Size = new System.Drawing.Size(144, 21);
             this.StoryNameCBox.TabIndex = 24;
             // 
+            // PlaySaved_lbl
+            // 
+            this.PlaySaved_lbl.AutoSize = true;
+            this.PlaySaved_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.PlaySaved_lbl.Location = new System.Drawing.Point(325, 366);
+            this.PlaySaved_lbl.Name = "PlaySaved_lbl";
+            this.PlaySaved_lbl.Size = new System.Drawing.Size(27, 13);
+            this.PlaySaved_lbl.TabIndex = 25;
+            this.PlaySaved_lbl.Text = "Play";
+            // 
+            // Save_lbl
+            // 
+            this.Save_lbl.AutoSize = true;
+            this.Save_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Save_lbl.Location = new System.Drawing.Point(325, 437);
+            this.Save_lbl.Name = "Save_lbl";
+            this.Save_lbl.Size = new System.Drawing.Size(31, 13);
+            this.Save_lbl.TabIndex = 26;
+            this.Save_lbl.Text = "Save";
+            // 
+            // Mic_lbl
+            // 
+            this.Mic_lbl.AutoSize = true;
+            this.Mic_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Mic_lbl.Location = new System.Drawing.Point(315, 512);
+            this.Mic_lbl.Name = "Mic_lbl";
+            this.Mic_lbl.Size = new System.Drawing.Size(56, 13);
+            this.Mic_lbl.TabIndex = 27;
+            this.Mic_lbl.Text = "Adjust Mic";
+            // 
             // Recognize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +330,9 @@
             this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(956, 705);
+            this.Controls.Add(this.Mic_lbl);
+            this.Controls.Add(this.Save_lbl);
+            this.Controls.Add(this.PlaySaved_lbl);
             this.Controls.Add(this.StoryNameCBox);
             this.Controls.Add(this.Delete_Story);
             this.Controls.Add(this.button1);
@@ -309,6 +348,7 @@
             this.Controls.Add(this.TextToSpeech);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "Recognize";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Translate a story";
@@ -349,6 +389,9 @@
         private System.Windows.Forms.PictureBox Delete_Story;
         private System.Windows.Forms.ToolTip Delete_ToolTip;
         private System.Windows.Forms.ComboBox StoryNameCBox;
+        private System.Windows.Forms.Label PlaySaved_lbl;
+        private System.Windows.Forms.Label Save_lbl;
+        private System.Windows.Forms.Label Mic_lbl;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }

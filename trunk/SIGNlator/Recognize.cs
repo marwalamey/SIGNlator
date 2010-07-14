@@ -47,6 +47,7 @@ namespace SIGNlator
             }
             
         }
+       
 
         private void TranslateTTS_Click(object sender, EventArgs e)
         {
@@ -54,36 +55,41 @@ namespace SIGNlator
             core.MotionSeq_Clear();
             string inputTextString = InputText.Text;
             string[] wordsInSentence = inputTextString.Split(new char[] { '\r', '\n', ' ' }, StringSplitOptions.RemoveEmptyEntries);
- 
+
             int motionNo;
             int motionNo_Vowelized;
-           // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
-            for (int i =0; i < wordsInSentence.Length; i++)
+            // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
+            for (int i = 0; i < wordsInSentence.Length; i++)
             {
                 motionNo = core.Run_Text_To_Sign(wordsInSentence[i]);
                 motionNo_Vowelized = core.Run_Text_To_Sign_Vowelized(wordsInSentence[i]);
-                if (motionNo != -1 || motionNo_Vowelized!=-1 )
+                if (motionNo != -1 || motionNo_Vowelized != -1)
                 {
                     //call quest here
                     //InputText.Text += Convert.ToString(motionNo); //only for check
-                    if ((motionNo == motionNo_Vowelized)||(motionNo!=-1 && motionNo_Vowelized==-1))
+                    if ((motionNo == motionNo_Vowelized) || (motionNo != -1 && motionNo_Vowelized == -1))
                     {
-                        Change_Motion(motionNo);
+                        if (motionNo != 0)
+                            Change_Motion(motionNo);
 
                     }
-                    else if (motionNo_Vowelized!= -1 && motionNo==-1)
+                    else if (motionNo_Vowelized != -1 && motionNo == -1)
                     {
-                        Change_Motion(motionNo_Vowelized);
-                        
+                        if (motionNo != 0)
+                            Change_Motion(motionNo_Vowelized);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show("'" + wordsInSentence[i] + "'" + "  is out of scope" );
+                    MessageBox.Show("'" + wordsInSentence[i] + "'" + "  is out of scope");
                 }
 
-               
+
             }
+ 
+            
+           
         }
 
         private void Show_Sign_Click(object sender, EventArgs e)
@@ -235,9 +241,11 @@ namespace SIGNlator
             }
             else if (counterRec == 1)
             {
+                core.MotionSeq.Clear();
                 counterRec = 0;
                 pictureBox1.BackgroundImage = new Bitmap("RecOff1 copy.gif");
                 core.Save_Speech();
+
                 List<int> mot = core.Run_Recognizer(false);
                 List<string> RecWords = core.Return_Words();
                 int NoOfWords = RecWords.Count;
@@ -251,31 +259,54 @@ namespace SIGNlator
                 int NoOfMot = mot.Count;
                 for (i = 0; i < NoOfMot; i++)
                 {
+                    if(mot[i] !=0)
 
                     Change_Motion(mot[i]);
 
 
                 }
-                mot.Clear();
+                /******************************************************************************/
+                core.Text_Clear();
+                core.MotionSeq_Clear();
+                string inputTextString = InputText.Text;
+                string[] wordsInSentence = inputTextString.Split(new char[] { '\r', '\n', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                int motionNo;
+                int motionNo_Vowelized;
+                // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
+                for (int j = 0; j < wordsInSentence.Length; j++)
+                {
+                    motionNo = core.Run_Text_To_Sign(wordsInSentence[j]);
+                    motionNo_Vowelized = core.Run_Text_To_Sign_Vowelized(wordsInSentence[j]);
+                }
+                /******************************************************************************/
+                
+               //
             }
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
-
-            int IsSaved = core.Save_Story(SaveStoryName.Text);
-            if (IsSaved == 1)
+            if (SaveStoryName.Text.Length!=0)
             {
-                MessageBox.Show("Story saved");
-                StoryNameCBox.Items.Clear();
-                StoryName = core.Retrieve_Saved_Stories();
-                for (int i = 0; i < StoryName.Count; i++)
+                int IsSaved = core.Save_Story(SaveStoryName.Text);
+                if (IsSaved == 1)
                 {
-                    StoryNameCBox.Items.Add(StoryName[i]);
+                    MessageBox.Show("Story saved");
+                    StoryNameCBox.Items.Clear();
+                    StoryName = core.Retrieve_Saved_Stories();
+                    for (int i = 0; i < StoryName.Count; i++)
+                    {
+                        StoryNameCBox.Items.Add(StoryName[i]);
+                    }
                 }
+                else
+                    MessageBox.Show("Error saving story");
             }
             else
-                MessageBox.Show("Error saving story");
+            {
+                MessageBox.Show("Please Enter first a story name");
+            }
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -461,6 +492,34 @@ namespace SIGNlator
 
                 }
             }
+
+        }
+
+        private void SaveStoryName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+                e.Handled = false;
+
+        }
+
+        private void InputText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar)
+          && !char.IsLetterOrDigit(e.KeyChar)
+           && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+            else
+                e.Handled = false;
+        }
+
+        private void SaveStoryName_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
