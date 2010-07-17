@@ -28,20 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Help_Ico = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Help_Ico
+            // 
+            this.Help_Ico.BackgroundImage = global::SIGNlator.Properties.Resources.help1;
+            this.Help_Ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Help_Ico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Help_Ico.Location = new System.Drawing.Point(8, 10);
+            this.Help_Ico.Name = "Help_Ico";
+            this.Help_Ico.Size = new System.Drawing.Size(35, 32);
+            this.Help_Ico.TabIndex = 0;
+            this.Help_Ico.TabStop = false;
+            this.Help_Ico.Click += new System.EventHandler(this.Help_Ico_Click);
             // 
             // Boundary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 403);
+            this.Controls.Add(this.Help_Ico);
             this.Name = "Boundary";
             this.Text = "Boundary";
-            this.Load += new System.EventHandler(this.Boundary_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        public System.Windows.Forms.PictureBox Help_Ico;
     }
 }
