@@ -20,11 +20,7 @@ namespace SIGNlator
         int counterRec = 0;
         Form welcomeForm = new Form();
         public bool toLearn = false;
-        public static void ThreadProc()
-        {
-            Application.Run(new Learn());
 
-        }
 
         public Recognize(Form wf)
         {
@@ -92,42 +88,13 @@ namespace SIGNlator
            
         }
 
-        private void Show_Sign_Click(object sender, EventArgs e)
-        {
-            core.Save_Speech();
-            List<int> mot= core.Run_Recognizer(false);
-            int i = 0;
-            int NoOfMot = mot.Count;
-            for (i = 0; i < NoOfMot; i++)
-            {
-        
-                Change_Motion(mot[i]);
-                
-                
-            }
-            mot.Clear();
-            
-        }
 
-        private void Save_Story_Click(object sender, EventArgs e)
-        {
-            int IsSaved = core.Save_Story(SaveStoryName.Text);
-            if (IsSaved == 1)
-            {
-                MessageBox.Show("Story saved");
-            }
-            else
-                MessageBox.Show("Error saving story");
-        }
         /// <summary>
                 /// Open file and read sequence of motions and call quest
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void PlaySaved_Click(object sender, EventArgs e)
-        {
-            core.Play_Saved_Stories(StoryNameCBox.SelectedText);
-        }
+
         /// <summary>
         /// open file and display the list of saved stories in combobox
         /// </summary>
@@ -190,163 +157,16 @@ namespace SIGNlator
 
         }
 
-        private void Adjust_Click(object sender, EventArgs e)
-        {
-            MixerTest.MixerForm mixerForm = new MixerTest.MixerForm();
-            mixerForm.Show();
-        }
-
-        private void PlaySavedStories_Click(object sender, EventArgs e)
-        {
-            MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
-            
-            for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
-            {
-                InputText.Clear();
-                InputText.Text += " " + MotAndtxt.getText()[i];
-                Change_Motion(MotAndtxt.getMotioNo()[i]);
-            }
-            MotAndtxt.Reset_MotionAndText();
-
-        }
-
-        private void Record_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (counterRec == 0)
-            {
-                counterRec++;
-                pictureBox1.BackgroundImage = new Bitmap("RecOff copy.gif");
-                core.Record_Speech();
-
-            }
-            else if (counterRec == 1)
-            {
-                core.MotionSeq.Clear();
-                counterRec = 0;
-                pictureBox1.BackgroundImage = new Bitmap("RecOff1 copy.gif");
-                core.Save_Speech();
-
-                List<int> mot = core.Run_Recognizer(false);
-                List<string> RecWords = core.Return_Words();
-                int NoOfWords = RecWords.Count;
-                InputText.Clear();
-
-                for (int k = 0; k < NoOfWords;k++ )
-                {
-                    InputText.Text += RecWords[k]+" ";
-                }
-                int i = 0;
-                int NoOfMot = mot.Count;
-                for (i = 0; i < NoOfMot; i++)
-                {
-                    if(mot[i] !=0)
-
-                    Change_Motion(mot[i]);
-
-
-                }
-                /******************************************************************************/
-                core.Text_Clear();
-                core.MotionSeq_Clear();
-                string inputTextString = InputText.Text;
-                string[] wordsInSentence = inputTextString.Split(new char[] { '\r', '\n', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                int motionNo;
-                int motionNo_Vowelized;
-                // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
-                for (int j = 0; j < wordsInSentence.Length; j++)
-                {
-                    motionNo = core.Run_Text_To_Sign(wordsInSentence[j]);
-                    motionNo_Vowelized = core.Run_Text_To_Sign_Vowelized(wordsInSentence[j]);
-                }
-                /******************************************************************************/
-                
-               //
-            }
-        }
-
-        private void pictureBox4_Click_1(object sender, EventArgs e)
-        {
-            if (SaveStoryName.Text.Length!=0)
-            {
-                int IsSaved = core.Save_Story(SaveStoryName.Text);
-                if (IsSaved == 1)
-                {
-                    MessageBox.Show("Story saved");
-                    StoryNameCBox.Items.Clear();
-                    StoryName = core.Retrieve_Saved_Stories();
-                    for (int i = 0; i < StoryName.Count; i++)
-                    {
-                        StoryNameCBox.Items.Add(StoryName[i]);
-                    }
-                }
-                else
-                    MessageBox.Show("Error saving story");
-            }
-            else
-            {
-                MessageBox.Show("Please Enter first a story name");
-            }
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-            MixerTest.MixerForm mixerForm = new MixerTest.MixerForm();
-            mixerForm.Show();
-
-        }
-
-        private void pictureBox3_Click_1(object sender, EventArgs e)
-        {
-
-            try
-            {
-                InputText.Clear();
-                MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
-
-                for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
-                {
-                    
-                    InputText.Text += " " + MotAndtxt.getText()[i];
-                    Change_Motion(MotAndtxt.getMotioNo()[i]);
-                }
-                MotAndtxt.Reset_MotionAndText();
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Please choose a saved story to play");
-            }
-        }
-
+     
         private void RecBtn_hover(object sender, EventArgs e)
         {
-            pictureBox1.Size = new System.Drawing.Size(49, 35);
+            Recognize_Pb.Size = new System.Drawing.Size(49, 35);
 
         }
 
         private void RecBtn_Leave(object sender, EventArgs e)
         {
-            pictureBox1.Size = new System.Drawing.Size(53, 39);
+            Recognize_Pb.Size = new System.Drawing.Size(53, 39);
            
 
         }
@@ -365,20 +185,6 @@ namespace SIGNlator
 
         }
 
-   
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            toLearn = true;
-            Learn lrn = new Learn(welcomeForm);
-            lrn.Show();
-            this.Close();
-            //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
-            //t.Start();
-            //this.Close();
-           
-        }
-
         public void Recognize_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (toLearn == false)
@@ -388,23 +194,6 @@ namespace SIGNlator
 
         }
 
-        private void InputText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Delete_Click(object sender, EventArgs e)
-        {
-            
-            
-           
-            
-        }
-
-        private void ToolTip_Save_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
 
         private void axQuest3DCtrl41_OnEvent(object sender, AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEvent e)
         {
@@ -433,11 +222,6 @@ namespace SIGNlator
         {
             pb_AdjustMic.Size = new System.Drawing.Size(50, 45);
 
-        }
-
-        private void DeleteStory_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void Delete_Hover(object sender, EventArgs e)
@@ -518,15 +302,139 @@ namespace SIGNlator
                 e.Handled = false;
         }
 
-        private void SaveStoryName_TextChanged(object sender, EventArgs e)
-        {
 
+        private void Recognize_Pb_Click(object sender, EventArgs e)
+        {
+            if (counterRec == 0)
+            {
+                counterRec++;
+                Recognize_Pb.BackgroundImage = new Bitmap("RecOff copy.gif");
+                core.Record_Speech();
+                //RecordRec_lbl.Refresh();
+                RecordRec_lbl.Text = "Stop and translate";
+                RecordRec_lbl.Refresh();
+
+            }
+            else if (counterRec == 1)
+            {
+                core.MotionSeq.Clear();
+                counterRec = 0;
+                Recognize_Pb.BackgroundImage = new Bitmap("RecOff1 copy.gif");
+                Recognize_Pb.Refresh();
+                RecordRec_lbl.Text = "Narrate a story";
+                RecordRec_lbl.Refresh();
+                core.Save_Speech();
+
+                List<int> mot = core.Run_Recognizer(false);
+                List<string> RecWords = core.Return_Words();
+                int NoOfWords = RecWords.Count;
+                InputText.Clear();
+
+                for (int k = 0; k < NoOfWords; k++)
+                {
+                    InputText.Text += RecWords[k] + " ";
+                }
+                InputText.Refresh();
+              
+                int i = 0;
+                int NoOfMot = mot.Count;
+                for (i = 0; i < NoOfMot; i++)
+                {
+                    if (mot[i] != 0)
+
+                        Change_Motion(mot[i]);
+
+
+                }
+                /******************************************************************************/
+                core.Text_Clear();
+                core.MotionSeq_Clear();
+                string inputTextString = InputText.Text;
+                string[] wordsInSentence = inputTextString.Split(new char[] { '\r', '\n', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                int motionNo;
+                int motionNo_Vowelized;
+                // for (int i = wordsInSentence.Length-1; i >=0 ; i--)
+                for (int j = 0; j < wordsInSentence.Length; j++)
+                {
+                    motionNo = core.Run_Text_To_Sign(wordsInSentence[j]);
+                    motionNo_Vowelized = core.Run_Text_To_Sign_Vowelized(wordsInSentence[j]);
+                }
+                /******************************************************************************/
+
+                //
+            }
         }
+
+        private void pb_PlaySaved_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                InputText.Clear();
+                MotionAndText MotAndtxt = core.Play_Saved_Stories(Convert.ToString(StoryNameCBox.SelectedItem));
+
+                for (int i = 0; i < MotAndtxt.getMotioNo().Count; i++)
+                {
+
+                    InputText.Text += " " + MotAndtxt.getText()[i];
+                    InputText.Refresh();
+                    Change_Motion(MotAndtxt.getMotioNo()[i]);
+                }
+                MotAndtxt.Reset_MotionAndText();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please choose a saved story to play");
+            }
+        }
+
+        private void pb_Save_Click(object sender, EventArgs e)
+        {
+            if (SaveStoryName.Text.Length != 0)
+            {
+                int IsSaved = core.Save_Story(SaveStoryName.Text);
+                if (IsSaved == 1)
+                {
+                    MessageBox.Show("Story saved");
+                    StoryNameCBox.Items.Clear();
+                    StoryName = core.Retrieve_Saved_Stories();
+                    for (int i = 0; i < StoryName.Count; i++)
+                    {
+                        StoryNameCBox.Items.Add(StoryName[i]);
+                    }
+                }
+                else
+                    MessageBox.Show("Error saving story");
+            }
+            else
+            {
+                MessageBox.Show("Please Enter first a story name");
+            }
+        }
+
+        private void pb_AdjustMic_Click(object sender, EventArgs e)
+        {
+            MixerTest.MixerForm mixerForm = new MixerTest.MixerForm();
+            mixerForm.Show();
+        }
+
+        private void ToLearn_btn_Click(object sender, EventArgs e)
+        {
+            toLearn = true;
+            Learn lrn = new Learn(welcomeForm);
+            lrn.Show();
+            this.Close();
+            //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+            //t.Start();
+            //this.Close();
+        }
+
+       
 
       
 
     
 
 
-    }
+    } 
 }

@@ -12,9 +12,6 @@ namespace SIGNlator
         MotionAndText MotAndTxt = new MotionAndText();
         StreamReader read;
 
-
-
-
         /// <summary>
         /// open files and save the sequence and name the file with story name
         /// and save story name in the file called StoryNames

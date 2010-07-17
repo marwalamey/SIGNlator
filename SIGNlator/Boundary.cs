@@ -19,9 +19,12 @@ namespace SIGNlator
             InitializeComponent();
         }
 
-        private void Boundary_Load(object sender, EventArgs e)
+        private void Help_Ico_Click(object sender, EventArgs e)
         {
-
+            Help hlp = new Help();
+            hlp.Show();
         }
+
+    
     }
 }

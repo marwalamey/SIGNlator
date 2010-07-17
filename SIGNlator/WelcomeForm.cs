@@ -35,22 +35,23 @@ namespace SIGNlator
 
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BeginSIGNlator_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // BeginSIGNlator_btn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.BeginSIGNlator_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(308, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Begin SIGNlator";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BeginSIGNlator_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BeginSIGNlator_btn.Location = new System.Drawing.Point(308, 395);
+            this.BeginSIGNlator_btn.Name = "BeginSIGNlator_btn";
+            this.BeginSIGNlator_btn.Size = new System.Drawing.Size(201, 23);
+            this.BeginSIGNlator_btn.TabIndex = 0;
+            this.BeginSIGNlator_btn.Text = "Begin SIGNlator";
+            this.BeginSIGNlator_btn.UseVisualStyleBackColor = true;
+            this.BeginSIGNlator_btn.Click += new System.EventHandler(this.BeginSIGNlator_btn_Click);
             // 
             // label1
             // 
@@ -90,7 +91,7 @@ namespace SIGNlator
             this.ClientSize = new System.Drawing.Size(778, 433);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BeginSIGNlator_btn);
             this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.Name = "WelcomeForm";
@@ -118,27 +119,25 @@ namespace SIGNlator
         private void Choose_Language(int languageNo)
         { }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Recognize rec = new Recognize(this);
-            rec.Show();
-            this.Visible = false;
-           // t.IsBackground = false;
-            //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
-            //t.Start();
-            //t.IsBackground = false;
-            //this.Close();
-        }
+     
 
         private void WelcomeForm_FormClosed(object sender, FormClosedEventArgs e)
         {
 
         }
 
-        public static void ThreadProc()
-        {
-            Application.Run(new Recognize());
+    
 
+        private void BeginSIGNlator_btn_Click(object sender, EventArgs e)
+        {
+            Recognize rec = new Recognize(this);
+            rec.Show();
+            this.Visible = false;
+            // t.IsBackground = false;
+            //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+            //t.Start();
+            //t.IsBackground = false;
+            //this.Close();
         }
     }
 }

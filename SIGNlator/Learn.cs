@@ -81,15 +81,8 @@ namespace SIGNlator
             
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void VocabularyListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Double_Clicked_Item(object sender, MouseEventArgs e)
         {
@@ -99,6 +92,7 @@ namespace SIGNlator
             string input = VocabularyListBox.SelectedItem.ToString();
             LearnedWord.Text = input;
             LearnedWord.Font =  new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LearnedWord.Refresh();
             MotNPic = core.Run_Text_To_Sign_Learn(input);
             int motionNo = MotNPic.getMotionNo();
 
@@ -106,7 +100,7 @@ namespace SIGNlator
             {
                 LearningPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
                 LearningPicBox.BackgroundImage = new Bitmap(MotNPic.getPic());
-                
+                LearningPicBox.Refresh();
                 
             }
             catch (Exception ex)
@@ -148,14 +142,7 @@ namespace SIGNlator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            toRecognize = true;
-            Recognize rec = new Recognize(welcomeForm);
-            rec.Show();
-            this.Close();
-
-        }
+       
 
         private void Learn_Closed(object sender, FormClosedEventArgs e)
         {
@@ -167,6 +154,22 @@ namespace SIGNlator
             }
 
         }
+
+        private void ToRec_btn_Click(object sender, EventArgs e)
+        {
+            toRecognize = true; 
+            Recognize rec = new Recognize(welcomeForm);
+            rec.Show();
+            this.Close();
+
+        }
+
+        private void VocabularyListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+      
 
 
 
