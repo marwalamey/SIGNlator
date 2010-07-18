@@ -68,89 +68,90 @@ namespace MixerTest
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(MixerForm));
-			this.cboOutputDevices = new System.Windows.Forms.ComboBox();
-			this.lblOutput = new System.Windows.Forms.Label();
-			this.lblInput = new System.Windows.Forms.Label();
-			this.cboInputDevices = new System.Windows.Forms.ComboBox();
-			this.lblMixer = new System.Windows.Forms.Label();
-			this.gbSplit = new System.Windows.Forms.GroupBox();
-			this.SuspendLayout();
-			// 
-			// cboOutputDevices
-			// 
-			this.cboOutputDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboOutputDevices.Location = new System.Drawing.Point(88, 32);
-			this.cboOutputDevices.Name = "cboOutputDevices";
-			this.cboOutputDevices.Size = new System.Drawing.Size(192, 21);
-			this.cboOutputDevices.TabIndex = 2;
-			this.cboOutputDevices.SelectedIndexChanged += new System.EventHandler(this.cboOutputDevices_SelectedIndexChanged);
-			// 
-			// lblOutput
-			// 
-			this.lblOutput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.lblOutput.Location = new System.Drawing.Point(12, 32);
-			this.lblOutput.Name = "lblOutput";
-			this.lblOutput.Size = new System.Drawing.Size(100, 16);
-			this.lblOutput.TabIndex = 4;
-			this.lblOutput.Text = "Playback";
-			// 
-			// lblInput
-			// 
-			this.lblInput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.lblInput.Location = new System.Drawing.Point(12, 259);
-			this.lblInput.Name = "lblInput";
-			this.lblInput.Size = new System.Drawing.Size(100, 20);
-			this.lblInput.TabIndex = 8;
-			this.lblInput.Text = "Recording";
-			// 
-			// cboInputDevices
-			// 
-			this.cboInputDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboInputDevices.Location = new System.Drawing.Point(88, 259);
-			this.cboInputDevices.Name = "cboInputDevices";
-			this.cboInputDevices.Size = new System.Drawing.Size(192, 21);
-			this.cboInputDevices.TabIndex = 6;
-			this.cboInputDevices.SelectedIndexChanged += new System.EventHandler(this.cboInputDevices_SelectedIndexChanged);
-			// 
-			// lblMixer
-			// 
-			this.lblMixer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right)));
-			this.lblMixer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.lblMixer.Location = new System.Drawing.Point(16, 8);
-			this.lblMixer.Name = "lblMixer";
-			this.lblMixer.Size = new System.Drawing.Size(776, 16);
-			this.lblMixer.TabIndex = 9;
-			this.lblMixer.Text = "Mixer Controls";
-			this.lblMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// gbSplit
-			// 
-			this.gbSplit.Location = new System.Drawing.Point(0, 243);
-			this.gbSplit.Name = "gbSplit";
-			this.gbSplit.Size = new System.Drawing.Size(800, 8);
-			this.gbSplit.TabIndex = 10;
-			this.gbSplit.TabStop = false;
-			// 
-			// MixerForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(800, 486);
-			this.Controls.Add(this.gbSplit);
-			this.Controls.Add(this.cboInputDevices);
-			this.Controls.Add(this.cboOutputDevices);
-			this.Controls.Add(this.lblMixer);
-			this.Controls.Add(this.lblInput);
-			this.Controls.Add(this.lblOutput);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximumSize = new System.Drawing.Size(2000, 520);
-			this.MinimumSize = new System.Drawing.Size(0, 520);
-			this.Name = "MixerForm";
-			this.Text = "Mixer";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MixerForm));
+            this.cboOutputDevices = new System.Windows.Forms.ComboBox();
+            this.lblOutput = new System.Windows.Forms.Label();
+            this.lblInput = new System.Windows.Forms.Label();
+            this.cboInputDevices = new System.Windows.Forms.ComboBox();
+            this.lblMixer = new System.Windows.Forms.Label();
+            this.gbSplit = new System.Windows.Forms.GroupBox();
+            this.SuspendLayout();
+            // 
+            // cboOutputDevices
+            // 
+            this.cboOutputDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboOutputDevices.Location = new System.Drawing.Point(88, 32);
+            this.cboOutputDevices.Name = "cboOutputDevices";
+            this.cboOutputDevices.Size = new System.Drawing.Size(192, 21);
+            this.cboOutputDevices.TabIndex = 2;
+            this.cboOutputDevices.SelectedIndexChanged += new System.EventHandler(this.cboOutputDevices_SelectedIndexChanged);
+            // 
+            // lblOutput
+            // 
+            this.lblOutput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutput.Location = new System.Drawing.Point(12, 32);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(100, 16);
+            this.lblOutput.TabIndex = 4;
+            this.lblOutput.Text = "Playback";
+            // 
+            // lblInput
+            // 
+            this.lblInput.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInput.Location = new System.Drawing.Point(12, 259);
+            this.lblInput.Name = "lblInput";
+            this.lblInput.Size = new System.Drawing.Size(100, 20);
+            this.lblInput.TabIndex = 8;
+            this.lblInput.Text = "Recording";
+            // 
+            // cboInputDevices
+            // 
+            this.cboInputDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboInputDevices.Location = new System.Drawing.Point(88, 259);
+            this.cboInputDevices.Name = "cboInputDevices";
+            this.cboInputDevices.Size = new System.Drawing.Size(192, 21);
+            this.cboInputDevices.TabIndex = 6;
+            this.cboInputDevices.SelectedIndexChanged += new System.EventHandler(this.cboInputDevices_SelectedIndexChanged);
+            // 
+            // lblMixer
+            // 
+            this.lblMixer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMixer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMixer.Location = new System.Drawing.Point(-43, 6);
+            this.lblMixer.Name = "lblMixer";
+            this.lblMixer.Size = new System.Drawing.Size(461, 23);
+            this.lblMixer.TabIndex = 9;
+            this.lblMixer.Text = "Mixer Controls";
+            this.lblMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gbSplit
+            // 
+            this.gbSplit.Location = new System.Drawing.Point(0, 243);
+            this.gbSplit.Name = "gbSplit";
+            this.gbSplit.Size = new System.Drawing.Size(800, 8);
+            this.gbSplit.TabIndex = 10;
+            this.gbSplit.TabStop = false;
+            // 
+            // MixerForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(367, 486);
+            this.Controls.Add(this.gbSplit);
+            this.Controls.Add(this.cboInputDevices);
+            this.Controls.Add(this.cboOutputDevices);
+            this.Controls.Add(this.lblMixer);
+            this.Controls.Add(this.lblInput);
+            this.Controls.Add(this.lblOutput);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(2000, 520);
+            this.MinimumSize = new System.Drawing.Size(0, 520);
+            this.Name = "MixerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mixer";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
 
 		}
 		#endregion
