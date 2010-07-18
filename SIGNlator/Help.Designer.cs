@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
             this.Help_Menu = new System.Windows.Forms.ListBox();
             this.Help_pb = new System.Windows.Forms.PictureBox();
             this.HowTo = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.Help_Menu.Name = "Help_Menu";
             this.Help_Menu.Size = new System.Drawing.Size(120, 602);
             this.Help_Menu.TabIndex = 0;
-           
             this.Help_Menu.DoubleClick += new System.EventHandler(this.Help_Menu_DoubleClick);
             // 
             // Help_pb
@@ -79,7 +79,6 @@
             this.Title.Size = new System.Drawing.Size(382, 47);
             this.Title.TabIndex = 3;
             this.Title.Text = "How to use SIGNlator!!";
-            
             // 
             // Help
             // 
@@ -91,10 +90,10 @@
             this.Controls.Add(this.HowTo);
             this.Controls.Add(this.Help_pb);
             this.Controls.Add(this.Help_Menu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Help";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Help";
-           
             ((System.ComponentModel.ISupportInitialize)(this.Help_pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

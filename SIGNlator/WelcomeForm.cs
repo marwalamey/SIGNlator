@@ -35,9 +35,11 @@ namespace SIGNlator
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.BeginSIGNlator_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).BeginInit();
             this.SuspendLayout();
             // 
             // BeginSIGNlator_btn
@@ -93,12 +95,18 @@ namespace SIGNlator
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BeginSIGNlator_btn);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "WelcomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome SIGNlator";
             this.Load += new System.EventHandler(this.WelcomeForm_Load_1);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WelcomeForm_FormClosed);
+            this.Controls.SetChildIndex(this.BeginSIGNlator_btn, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.Help_Ico, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
