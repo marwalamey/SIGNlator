@@ -294,7 +294,7 @@ namespace SIGNlator
         {
             if (!char.IsControl(e.KeyChar)
           && !char.IsLetterOrDigit(e.KeyChar)
-           && e.KeyChar != '.')
+           && e.KeyChar != '.' && e.KeyChar != ' ')
             {
                 e.Handled = true;
             }
