@@ -169,21 +169,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Picture7.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\RecOff1 copy.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\play.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="bin\Debug\LearnBackground.gif" />
     <None Include="bin\Debug\Picture3.gif" />
     <None Include="bin\Debug\DeleteRed.png" />
     <None Include="bin\Debug\Picture4.png" />
     <None Include="bin\Debug\help.gif" />
-    <Content Include="Resources\trans.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

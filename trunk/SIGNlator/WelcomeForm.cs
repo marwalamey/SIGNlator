@@ -88,7 +88,7 @@ namespace SIGNlator
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture3;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(778, 433);
             this.Controls.Add(this.label2);
