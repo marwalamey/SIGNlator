@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boundary));
             this.Help_Ico = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).BeginInit();
             this.SuspendLayout();
             // 
             // Help_Ico
             // 
-            this.Help_Ico.BackgroundImage = global::SIGNlator.Properties.Resources.help1;
+            this.Help_Ico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Help_Ico.BackgroundImage")));
             this.Help_Ico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Help_Ico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Help_Ico.Location = new System.Drawing.Point(8, 10);

@@ -36,7 +36,6 @@
             this.InputText = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.axQuest3DCtrl41 = new AxQuest3DActiveX4Lib.AxQuest3DCtrl4();
-            this.Recognize_Pb = new System.Windows.Forms.PictureBox();
             this.pb_AdjustMic = new System.Windows.Forms.PictureBox();
             this.pb_PlaySaved = new System.Windows.Forms.PictureBox();
             this.pb_Save = new System.Windows.Forms.PictureBox();
@@ -47,6 +46,7 @@
             this.Play_Saved_ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.Adjust_Mic_Tooltip = new System.Windows.Forms.ToolTip(this.components);
             this.Recognize_ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Recognize_Pb = new System.Windows.Forms.PictureBox();
             this.Delete_Story = new System.Windows.Forms.PictureBox();
             this.Delete_ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.StoryNameCBox = new System.Windows.Forms.ComboBox();
@@ -57,12 +57,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).BeginInit();
             this.TextToSpeech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Help_Ico
+            // 
+            this.Help_Ico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Help_Ico.BackgroundImage")));
             // 
             // TranslateTTS
             // 
@@ -124,26 +128,10 @@
             this.axQuest3DCtrl41.TabIndex = 14;
             this.axQuest3DCtrl41.OnEvent += new AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEventHandler(this.axQuest3DCtrl41_OnEvent);
             // 
-            // Recognize_Pb
-            // 
-            this.Recognize_Pb.BackColor = System.Drawing.Color.Transparent;
-            this.Recognize_Pb.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
-            this.Recognize_Pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Recognize_Pb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Recognize_Pb.Location = new System.Drawing.Point(581, 222);
-            this.Recognize_Pb.Name = "Recognize_Pb";
-            this.Recognize_Pb.Size = new System.Drawing.Size(53, 39);
-            this.Recognize_Pb.TabIndex = 15;
-            this.Recognize_Pb.TabStop = false;
-            this.Recognize_ToolTip.SetToolTip(this.Recognize_Pb, "Press here then narrate your story\r\nthen press again to see the transaltion");
-            this.Recognize_Pb.MouseLeave += new System.EventHandler(this.RecBtn_Leave);
-            this.Recognize_Pb.Click += new System.EventHandler(this.Recognize_Pb_Click);
-            this.Recognize_Pb.MouseHover += new System.EventHandler(this.RecBtn_hover);
-            // 
             // pb_AdjustMic
             // 
             this.pb_AdjustMic.BackColor = System.Drawing.Color.Transparent;
-            this.pb_AdjustMic.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_AdjustMic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_AdjustMic.BackgroundImage")));
             this.pb_AdjustMic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_AdjustMic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_AdjustMic.Location = new System.Drawing.Point(343, 467);
@@ -159,7 +147,7 @@
             // pb_PlaySaved
             // 
             this.pb_PlaySaved.BackColor = System.Drawing.Color.Transparent;
-            this.pb_PlaySaved.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_PlaySaved.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_PlaySaved.BackgroundImage")));
             this.pb_PlaySaved.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_PlaySaved.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_PlaySaved.Location = new System.Drawing.Point(343, 318);
@@ -175,7 +163,7 @@
             // pb_Save
             // 
             this.pb_Save.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Save.BackgroundImage = global::SIGNlator.Properties.Resources.RecOff1_copy;
+            this.pb_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_Save.BackgroundImage")));
             this.pb_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_Save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pb_Save.Location = new System.Drawing.Point(343, 393);
@@ -255,10 +243,26 @@
             this.Recognize_ToolTip.ReshowDelay = 0;
             this.Recognize_ToolTip.Tag = "";
             // 
+            // Recognize_Pb
+            // 
+            this.Recognize_Pb.BackColor = System.Drawing.Color.Transparent;
+            this.Recognize_Pb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Recognize_Pb.BackgroundImage")));
+            this.Recognize_Pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Recognize_Pb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Recognize_Pb.Location = new System.Drawing.Point(581, 222);
+            this.Recognize_Pb.Name = "Recognize_Pb";
+            this.Recognize_Pb.Size = new System.Drawing.Size(53, 39);
+            this.Recognize_Pb.TabIndex = 15;
+            this.Recognize_Pb.TabStop = false;
+            this.Recognize_ToolTip.SetToolTip(this.Recognize_Pb, "Press here then narrate your story\r\nthen press again to see the transaltion");
+            this.Recognize_Pb.MouseLeave += new System.EventHandler(this.RecBtn_Leave);
+            this.Recognize_Pb.Click += new System.EventHandler(this.Recognize_Pb_Click);
+            this.Recognize_Pb.MouseHover += new System.EventHandler(this.RecBtn_hover);
+            // 
             // Delete_Story
             // 
             this.Delete_Story.BackColor = System.Drawing.Color.Transparent;
-            this.Delete_Story.BackgroundImage = global::SIGNlator.Properties.Resources.DeleteRed;
+            this.Delete_Story.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_Story.BackgroundImage")));
             this.Delete_Story.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Delete_Story.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Delete_Story.Location = new System.Drawing.Point(810, 556);
@@ -336,7 +340,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SIGNlator.Properties.Resources.Picture41;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(956, 705);
             this.Controls.Add(this.RecordRec_lbl);
@@ -386,10 +390,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).EndInit();
             this.TextToSpeech.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -404,7 +408,6 @@
         private System.Windows.Forms.GroupBox TextToSpeech;
         private System.Windows.Forms.Label label1;
         private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
-        private System.Windows.Forms.PictureBox Recognize_Pb;
         private System.Windows.Forms.PictureBox pb_AdjustMic;
         private System.Windows.Forms.PictureBox pb_PlaySaved;
         private System.Windows.Forms.PictureBox pb_Save;
@@ -423,6 +426,7 @@
         private System.Windows.Forms.Label Save_lbl;
         private System.Windows.Forms.Label Mic_lbl;
         private System.Windows.Forms.Label RecordRec_lbl;
+        private System.Windows.Forms.PictureBox Recognize_Pb;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }
