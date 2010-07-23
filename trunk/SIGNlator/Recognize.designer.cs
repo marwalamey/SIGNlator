@@ -35,7 +35,6 @@
             this.TextToSpeech = new System.Windows.Forms.GroupBox();
             this.InputText = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.axQuest3DCtrl41 = new AxQuest3DActiveX4Lib.AxQuest3DCtrl4();
             this.pb_AdjustMic = new System.Windows.Forms.PictureBox();
             this.pb_PlaySaved = new System.Windows.Forms.PictureBox();
             this.pb_Save = new System.Windows.Forms.PictureBox();
@@ -54,14 +53,15 @@
             this.Save_lbl = new System.Windows.Forms.Label();
             this.Mic_lbl = new System.Windows.Forms.Label();
             this.RecordRec_lbl = new System.Windows.Forms.Label();
+            this.axQuest3DCtrl41 = new AxQuest3DActiveX4Lib.AxQuest3DCtrl4();
             ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).BeginInit();
             this.TextToSpeech.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).BeginInit();
             this.SuspendLayout();
             // 
             // Help_Ico
@@ -117,16 +117,6 @@
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Enter story name:";
-            // 
-            // axQuest3DCtrl41
-            // 
-            this.axQuest3DCtrl41.Enabled = true;
-            this.axQuest3DCtrl41.Location = new System.Drawing.Point(411, 289);
-            this.axQuest3DCtrl41.Name = "axQuest3DCtrl41";
-            this.axQuest3DCtrl41.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axQuest3DCtrl41.OcxState")));
-            this.axQuest3DCtrl41.Size = new System.Drawing.Size(450, 246);
-            this.axQuest3DCtrl41.TabIndex = 14;
-            this.axQuest3DCtrl41.OnEvent += new AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEventHandler(this.axQuest3DCtrl41_OnEvent);
             // 
             // pb_AdjustMic
             // 
@@ -336,6 +326,16 @@
             this.RecordRec_lbl.TabIndex = 28;
             this.RecordRec_lbl.Text = "Narrate a story";
             // 
+            // axQuest3DCtrl41
+            // 
+            this.axQuest3DCtrl41.Enabled = true;
+            this.axQuest3DCtrl41.Location = new System.Drawing.Point(416, 292);
+            this.axQuest3DCtrl41.Name = "axQuest3DCtrl41";
+            this.axQuest3DCtrl41.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axQuest3DCtrl41.OcxState")));
+            this.axQuest3DCtrl41.Size = new System.Drawing.Size(442, 233);
+            this.axQuest3DCtrl41.TabIndex = 14;
+            this.axQuest3DCtrl41.OnEvent += new AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEventHandler(this.axQuest3DCtrl41_OnEvent);
+            // 
             // Recognize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,9 +357,9 @@
             this.Controls.Add(this.pb_AdjustMic);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Recognize_Pb);
-            this.Controls.Add(this.axQuest3DCtrl41);
             this.Controls.Add(this.SaveStoryName);
             this.Controls.Add(this.TextToSpeech);
+            this.Controls.Add(this.axQuest3DCtrl41);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -369,9 +369,9 @@
             this.Text = "Translate a story";
             this.Load += new System.EventHandler(this.Recognize_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Recognize_FormClosed);
+            this.Controls.SetChildIndex(this.axQuest3DCtrl41, 0);
             this.Controls.SetChildIndex(this.TextToSpeech, 0);
             this.Controls.SetChildIndex(this.SaveStoryName, 0);
-            this.Controls.SetChildIndex(this.axQuest3DCtrl41, 0);
             this.Controls.SetChildIndex(this.Recognize_Pb, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.pb_AdjustMic, 0);
@@ -389,12 +389,12 @@
             this.Controls.SetChildIndex(this.Help_Ico, 0);
             ((System.ComponentModel.ISupportInitialize)(this.Help_Ico)).EndInit();
             this.TextToSpeech.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AdjustMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PlaySaved)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Save)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Recognize_Pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Story)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axQuest3DCtrl41)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,7 +407,6 @@
         private System.Windows.Forms.TextBox SaveStoryName;
         private System.Windows.Forms.GroupBox TextToSpeech;
         private System.Windows.Forms.Label label1;
-        private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
         private System.Windows.Forms.PictureBox pb_AdjustMic;
         private System.Windows.Forms.PictureBox pb_PlaySaved;
         private System.Windows.Forms.PictureBox pb_Save;
@@ -427,6 +426,7 @@
         private System.Windows.Forms.Label Mic_lbl;
         private System.Windows.Forms.Label RecordRec_lbl;
         private System.Windows.Forms.PictureBox Recognize_Pb;
+        private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
       //////  private AxQuest3DActiveX4Lib.AxQuest3DCtrl4 axQuest3DCtrl41;
     }
 }

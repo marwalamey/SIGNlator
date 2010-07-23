@@ -262,14 +262,6 @@
         IAHeoEFOvWHwE3TdoSzIujcSkIEPBGIU4Wj609Ueo3oEwxWByAEQ5D53uucgEK6w+NqPExAAOw==
 </value>
   </data>
-  <data name="axQuest3DCtrl41.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAOQAAAAIB
-        AAAAAQAAAAAAAAAAAAAAACQAAAAQBwAA2BMAANgTAAATAA8AAIAIAAAAAAAIAAIAAAAAAAsA//8L
-</value>
-  </data>
   <data name="pb_AdjustMic.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhLwAqAPcAAAAAAP////39/fz8/Pv7+/n5+fj4+Pf39/b29vX19fT09PPz8/Ly8vHx8fDw8O/v
@@ -421,8 +413,8 @@
   <data name="Delete_Story.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEgAA
-        CxIB0t1+/AAAM2pJREFUeF7tXQdcVeUbPuOyp4J77723uc2ZK3dpalY2zNIcmTly5kxTM+ff0bRpmWlD
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCwAA
+        CwsBbQSEtwAAM2pJREFUeF7tXQdcVeUbPuOyp4J77723uc2ZK3dpalY2zNIcmTly5kxTM+ff0bRpmWlD
         ray0cuIEEQVFBUEUF/v5P+/hnuuFTBwXRIXf7w2Sy7nnnud59/t9nwpAyfl6iJ+AECBHHt5nkAP+Q64A
         OQTIIcDDa/5yXB/jv5yH8HArQA4BclzAw60BD7sFzLEAORYgxwI8zFYgxwLkWIAcC5BjAW6iBXdZJVf5
         9yJaOpF/y/nKnCdgPnP772neyZ7wGbqAO7hH843/608t/IUTRb7rVoLcwds89H+SIdDWJyTKJ89avhuK
@@ -647,6 +639,14 @@
   <metadata name="Delete_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>577, 17</value>
   </metadata>
+  <data name="axQuest3DCtrl41.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAOQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAACQAAAAQBwAA2BMAANgTAAATAA8AAIAIAAAAAAAIAAIAAAAAAAsA//8L
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>55</value>
   </metadata>
