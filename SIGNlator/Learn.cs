@@ -75,7 +75,7 @@ namespace SIGNlator
                     break;
                 }
             }
-            extraString += "StartGroupWeb.q3d";
+            extraString += "StartGroup.q3d";
             axQuest3DCtrl41.Url = extraString;
 
             
