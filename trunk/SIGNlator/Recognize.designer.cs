@@ -70,9 +70,10 @@
             // 
             // TranslateTTS
             // 
-            this.TranslateTTS.Location = new System.Drawing.Point(48, 376);
+            this.TranslateTTS.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TranslateTTS.Location = new System.Drawing.Point(48, 368);
             this.TranslateTTS.Name = "TranslateTTS";
-            this.TranslateTTS.Size = new System.Drawing.Size(158, 23);
+            this.TranslateTTS.Size = new System.Drawing.Size(158, 25);
             this.TranslateTTS.TabIndex = 0;
             this.TranslateTTS.Text = "Translate Text";
             this.TranslateTTS.UseVisualStyleBackColor = true;
@@ -91,6 +92,7 @@
             this.TextToSpeech.BackColor = System.Drawing.Color.Transparent;
             this.TextToSpeech.Controls.Add(this.InputText);
             this.TextToSpeech.Controls.Add(this.TranslateTTS);
+            this.TextToSpeech.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextToSpeech.Location = new System.Drawing.Point(49, 214);
             this.TextToSpeech.Name = "TextToSpeech";
             this.TextToSpeech.Size = new System.Drawing.Size(251, 405);
@@ -100,7 +102,7 @@
             // 
             // InputText
             // 
-            this.InputText.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.InputText.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.InputText.Location = new System.Drawing.Point(6, 30);
             this.InputText.Name = "InputText";
             this.InputText.Size = new System.Drawing.Size(222, 327);
@@ -334,6 +336,7 @@
             this.axQuest3DCtrl41.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axQuest3DCtrl41.OcxState")));
             this.axQuest3DCtrl41.Size = new System.Drawing.Size(442, 233);
             this.axQuest3DCtrl41.TabIndex = 14;
+            this.axQuest3DCtrl41.UseWaitCursor = true;
             this.axQuest3DCtrl41.OnEvent += new AxQuest3DActiveX4Lib._IQuest3DCtrl4Events_OnEventEventHandler(this.axQuest3DCtrl41_OnEvent);
             // 
             // Recognize

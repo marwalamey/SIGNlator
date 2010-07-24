@@ -42,10 +42,12 @@
             // 
             // VocabularyListBox
             // 
+            this.VocabularyListBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VocabularyListBox.FormattingEnabled = true;
+            this.VocabularyListBox.ItemHeight = 19;
             this.VocabularyListBox.Location = new System.Drawing.Point(34, 137);
             this.VocabularyListBox.Name = "VocabularyListBox";
-            this.VocabularyListBox.Size = new System.Drawing.Size(148, 316);
+            this.VocabularyListBox.Size = new System.Drawing.Size(148, 308);
             this.VocabularyListBox.TabIndex = 4;
             this.VocabularyListBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Double_Clicked_Item);
             this.VocabularyListBox.SelectedIndexChanged += new System.EventHandler(this.VocabularyListBox_SelectedIndexChanged);
