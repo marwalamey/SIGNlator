@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{96AEB804-87FA-40DC-A8D1-F89D3C172FCE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -190,6 +190,12 @@
     <None Include="bin\Debug\DeleteRed.png" />
     <None Include="bin\Debug\Picture4.png" />
     <None Include="bin\Debug\help.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BigBgdcr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\trans.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

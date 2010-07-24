@@ -59,5 +59,19 @@ namespace SIGNlator.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap BigBgdcr {
+            get {
+                object obj = ResourceManager.GetObject("BigBgdcr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap trans {
+            get {
+                object obj = ResourceManager.GetObject("trans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
