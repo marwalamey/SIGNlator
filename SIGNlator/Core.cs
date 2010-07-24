@@ -69,7 +69,7 @@ namespace SIGNlator
                 {
                 MotionSeq.Add(MotionNo);
                 Text.Add(wordInSentence);
-            }
+           }
             else
             {
                 MotionNo = -1;

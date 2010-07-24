@@ -24,9 +24,12 @@ namespace SIGNlator
 
         public Recognize(Form wf)
         {
+           
+            
             InitializeComponent();
             welcomeForm = wf;
             StoryName = core.Retrieve_Saved_Stories();
+            StoryNameCBox.Items.Clear();
             for (int i = 0; i < StoryName.Count; i++)
             {
                 StoryNameCBox.Items.Add(StoryName[i]);
@@ -281,7 +284,7 @@ namespace SIGNlator
 
         private void SaveStoryName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != ' ')
             {
                 e.Handled = true;
             }
@@ -398,6 +401,7 @@ namespace SIGNlator
                     MessageBox.Show("Story saved");
                     StoryNameCBox.Items.Clear();
                     StoryName = core.Retrieve_Saved_Stories();
+                    SaveStoryName.Clear();
                     for (int i = 0; i < StoryName.Count; i++)
                     {
                         StoryNameCBox.Items.Add(StoryName[i]);
