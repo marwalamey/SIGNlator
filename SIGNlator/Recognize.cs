@@ -327,13 +327,19 @@ namespace SIGNlator
                 RecordRec_lbl.Text = "Narrate a story";
                 RecordRec_lbl.Refresh();
                 core.Save_Speech();
-
+                label4.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                label4.Text = "Recognizing...Please Wait...";
+                label4.Refresh();
                 List<int> mot = core.Run_Recognizer(false);
                 List<string> RecWords = core.Return_Words();
                 int NoOfWords = RecWords.Count;
                 InputText.Clear();
 
-                for (int k = 0; k < NoOfWords; k++)
+                label4.Text = "";
+                label4.Refresh();
+
+
+                 for (int k = 0; k < NoOfWords; k++)
                 {
                     InputText.Text += RecWords[k] + " ";
                 }
@@ -431,6 +437,11 @@ namespace SIGNlator
             //System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
             //t.Start();
             //this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
 
        
