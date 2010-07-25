@@ -45,7 +45,7 @@ namespace SIGNlator
         public List<string> Recognize()
         {
             string path = get_path();
-            string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
+           string OP = Exec("HCopy -T 1 -C Config.conf -S test.scp", path);
             OP = Exec("HVite -C RecConfig.conf  -H hmm18_16/macros.mmf -H hmm18_16/hmmdefs.mmf -l  *  -i out.mlf -w network+tashkeel.slf -p -25.0 -s 10 -S testWav.scp testreifDict+tashkeel.txt tiedlist", path);
             List<string> temp = new List<string>();
          
@@ -59,6 +59,8 @@ namespace SIGNlator
         /// Runs HTK command for adaptation
         /// </summary>
         public void Adaptation()
+
+
         {
         }
 
