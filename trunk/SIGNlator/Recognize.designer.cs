@@ -103,7 +103,7 @@
             // 
             // InputText
             // 
-            this.InputText.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.InputText.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.InputText.Location = new System.Drawing.Point(21, 30);
             this.InputText.Name = "InputText";
             this.InputText.Size = new System.Drawing.Size(195, 377);
