@@ -81,7 +81,7 @@ namespace SIGNlator
                 }
                 else
                 {
-                    MessageBox.Show("'" + wordsInSentence[i] + "'" + "  is out of scope");
+                    MessageBox.Show("word '" + wordsInSentence[i] + "'" + "  has no sign");
                 }
 
 
